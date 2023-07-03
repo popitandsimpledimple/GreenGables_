@@ -1,0 +1,447 @@
+body{
+    margin: 0;
+    background-color: #EDE7DB;
+    font-family: 'Montserrat';  
+}
+
+
+/*---------------------------------*/
+
+.filterDiv {
+    margin: 2px;
+    display: none;
+    width: 100%;
+    letter-spacing: 1px;
+  }
+
+  .show{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+} 
+/*---------------------------------*/
+
+  
+/*---------------------------------*/
+.card {
+    width: 20%;
+    overflow-x: auto;
+  }
+
+  #card2{
+    width: 100%;
+  }
+  .card {display: flex}
+  
+  .card--content {
+    background-color: #e74c3c;
+    min-width: 200px;
+    margin: 5px;
+    
+  }
+
+  .card::-webkit-scrollbar {
+    display: none;
+  }
+
+  #myBtnContainer{
+    display: flex;
+    color: black;
+  }
+  
+
+  /* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    cursor: pointer;
+    font-size: 16px;
+
+    text-align: center;
+  }
+  
+  
+  .btn:hover {
+    font-weight: 600;
+  }
+  
+  
+  /*.btn.active {
+    background-color: #8A2BE2;
+    color: black;
+    border-radius: 32px;
+  }*/
+  
+  button{
+    background: none; 
+  }
+  
+
+
+/*---------------------------------*/
+
+
+
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+  }
+
+.main{ 
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    margin: 1% 10% 5% 10%;
+}
+
+
+.title{
+    display: flex;
+align-items: center;
+font-size: 28px;
+font-weight: 300;
+}
+
+.content_clients{
+    display: flex;
+    width: 100%;
+    margin: 5% 0;
+    justify-content: space-around;
+}
+
+.tab {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    color: #000;
+padding: 16px;
+font-size: 18px;
+border: none;
+cursor: pointer;
+border-bottom: black solid 2px;
+transition: font-weight 0.2s linear;
+width: 100%;
+text-align: inherit;
+background-color: #EDE7DB;
+font-weight: 100;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    border-bottom: 3px solid #000;
+
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    border-bottom: 4px solid #000;
+    font-weight: 600;
+    
+}
+
+/* Style the tab content */
+.tabcontent {
+    padding: 0px 12px;
+    width: 70%;
+    border: none;
+    
+}
+
+
+/* master class*/
+
+.master_classes{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    margin-bottom: 5%;
+}
+
+.master_classes_info {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #CAC48D;
+    border: 1px solid #000;
+    padding: 16px;
+}
+
+.imge{
+    display: flex;
+    width: 20%;
+}
+
+
+.imge img{
+    border-radius: 30px;
+    width: 150px;
+    height: 150px;
+}
+
+.master_classes_name_rating{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.master_classes_recording{
+    display: flex;
+    width: 25%;
+    justify-content: center;
+}
+
+.prise{
+    display: flex;
+}
+
+/*--------------------retutn*/
+.retutn_info, .order_tracking_info, .payment_info{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    line-height: 30px;
+}
+
+/*---------------------order_tracking
+
+.tabcontent_Delivery, .tabcontent_Delivery{
+    display: flex;
+}*/
+.tabcontent_Delivery {
+    padding: 0px 12px;
+    width: 100%;
+    border: none;
+  }
+
+#tab_delivery{
+    display: flex;
+    width: 100%;
+    flex-direction: inherit;
+}
+
+.delivery_info{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    line-height: 30px;
+}
+
+/* Style the buttons inside the tab */
+#tab_delivery button {
+    display: block;
+    background-color: #EDE7DB;
+    transition: 0.3s;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    opacity: 0.9;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+/* Change background color of buttons on hover */
+#tab_delivery button:hover {
+    background-color: #cac48d35;
+    border-radius: 20px;
+
+}
+
+/* Create an active/current "tab button" class */
+#tab_delivery button.active {
+    background-color: #CAC48D;
+    font-weight: 600;
+    border-radius: 20px;    
+}
+
+
+
+.delivery_from_title, .delivery_to_title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#box{
+    font-size: 20px;
+}
+/*------------------------*/
+.add-to-cart{
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #FDDBAD;
+    width: 100%;
+    height: 40px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 125.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+.add-to-cart:hover{
+    color: rgb(0, 0, 0);
+	background: #A1CA8D;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.add-to-cart:active{
+    background: #8DCA93;
+}
+
+
+
+/* adop */
+@media (max-width:1500px){
+    .master_classes_name_rating {
+        width: 40%;
+    }
+}
+
+@media (max-width:1300px){
+    .master_classes_name_rating {
+        width: 30%;
+    }
+}
+
+@media (max-width:1100px){
+    .master_classes_name_rating {
+        width: 20%;
+    }
+}
+
+
+
+
+@media (max-width:1030px){
+
+    .title{
+        font-size: 20px;
+    }
+
+    .content_clients{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .tab, #tab_delivery{
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .tab button, #tab_delivery button{
+        font-size: 16px;
+        text-align: center;
+        width: 25%;
+    }
+
+}
+
+
+@media (max-width:800px){
+    .tab button, #tab_delivery button{
+        width: 100%;
+    }
+    .master_classes_info {
+        flex-direction: column;
+    }
+    .imge{
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+
+    .imge img{
+        width: 200px;
+        height: 200px;
+    }
+    
+
+    .master_classes_name_rating {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    .info_card_description{
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prise{
+        margin-bottom: 5%;
+    }
+
+    .master_classes_recording {
+        width: 80%;
+    }
+    
+}
+
+@media (max-width: 590px){
+    
+}
+
+@media (max-width: 490px){
+    .tab button, #tab_delivery button{
+        font-size: 14px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+@media (max-width:1024px){
+    .card {
+        scrollbar-width: none;
+        width: 100%;
+      }
+    .tabcontent, #master_classes, #return, 
+    #order_tracking, #payment, #delivery{
+        width: 100%;
+    }
+    #tab_delivery button{
+        width: 100%;
+    }
+    .tabcontent_Delivery{
+        width: 100%;
+    }
+  }
+
+@media (max-width: 590px){
+    
+}
+
+@media (max-width: 490px){
+
+}
+
+/*-----------------*/
+.change {
+    color: #620000;
+  } 

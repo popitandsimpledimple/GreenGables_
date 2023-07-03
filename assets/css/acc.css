@@ -1,0 +1,948 @@
+body{
+    margin: 0;
+    background-color: #EDE7DB;
+    font-family: 'Montserrat';  
+}
+
+/*p{
+  font-size: 14px;
+}
+---------------------------------*/
+button{
+  border: none;
+}
+
+.filterDiv {
+    margin: 2px;
+    display: none;
+    width: 100%;
+    letter-spacing: 1px;
+  }
+
+  .show{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+} 
+/*---------------------------------*/
+
+
+/*---------------------------------*/
+.card {
+    width: 20%;
+    overflow-x: auto;
+  }
+
+  #card2{
+    width: 100%;
+  }
+  .card {display: flex}
+  
+  .card--content {
+    background-color: #e74c3c;
+    min-width: 200px;
+    margin: 5px;
+    
+  }
+
+  .card::-webkit-scrollbar {
+    display: none;
+  }
+
+  #myBtnContainer{
+    display: flex;
+    color: black;
+  }
+
+  /* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    cursor: pointer;
+    font-size: 16px;
+
+    text-align: center;
+  }
+  
+  
+  .btn:hover {
+    font-weight: 600;
+  }
+  
+  
+  /*.btn.active {
+    background-color: #8A2BE2;
+    color: black;
+    border-radius: 32px;
+  }*/
+  
+  button{
+    background: none; 
+  }
+  
+
+
+
+/*---------------------------------*/
+
+
+
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+  }
+
+.main{ 
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    margin: 1% 10% 5% 10%;
+}
+
+
+.title{
+    display: flex;
+align-items: center;
+font-size: 28px;
+font-weight: 300;
+}
+
+
+
+.content_clients{
+    display: flex;
+    width: 100%;
+    margin: 5% 0;
+    justify-content: space-around;
+}
+
+.tab {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    color: #000;
+padding: 16px;
+font-size: 18px;
+border: none;
+cursor: pointer;
+border-bottom: black solid 2px;
+transition: font-weight 0.9s linear;
+width: 100%;
+text-align: inherit;
+background-color: #EDE7DB;
+font-weight: 100;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    border-bottom: 3px solid #000;
+
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    border-bottom: 3px solid #000;
+}
+
+/* Style the tab content */
+.tabcontent {
+    
+    width: 70%;
+    border: none;
+}
+
+
+/* master class*/
+.profile{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.photo_personal_data{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cards_delivery{
+    display: flex;
+    width: 100%;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+
+
+.photo{
+    display: flex;
+    width: 30%;
+}
+
+
+.photo img{
+    border-radius: 30px;
+}
+
+.personal_data{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: #E4CEB9;
+  padding: 30px;
+  border-radius: 30px;
+  }
+  
+.change{
+  display: flex;
+  gap: 2vh;
+  margin-bottom: 5%;
+}  
+  .ld{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+  
+.pen{
+  display: flex;
+  align-items: center;
+  margin-bottom: 3%;
+  font-size: 20px;
+}
+
+.ok{
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+
+  .local{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  }
+
+  .local_data{
+    display: flex;
+flex-direction: column;
+  }
+
+.personal{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+ 
+  input[type=text], input[type=date], input[type=email] {
+    width: 70%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: white;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: 'Montserrat';
+} 
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=date]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.sex{
+  display: flex;
+  margin-bottom: 22px;
+  gap: 2vh;
+}
+
+.bday{
+  display: flex;
+  flex-direction: column;
+}
+
+.cards{
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  background-color: #E4CEB9;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.cards_title{
+  display: flex;
+  gap: 2vh;
+  margin-bottom: 5%;
+}
+
+.cards_pay{
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 30px;
+  
+}
+
+.card_number{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.delivery_address{
+  display: flex;
+}
+
+.delivery{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: #E4CEB9;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.delivery_title{
+  display: flex;
+  gap: 2vh;
+}
+
+.track_number_name{
+  display: flex;
+}
+
+.track_number{
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 10px 10px 10px 30px;
+}
+
+/*-----------------
+
+div {
+    position: relative;
+    width: auto;
+    display: inline;
+  }
+  
+  input {
+    background-color: #fff;
+  }
+  
+  #name1 {
+    margin-right: 24px;
+  }
+  
+  #name2 {
+    padding-right: 24px;
+  }
+  
+  input:nth-child(2) {
+    padding-right: 24px;
+  }
+  
+  svg {
+    position: absolute;
+    height: 80%;
+    top: 10%;
+    right: 5%;
+  }
+
+  -------------------------*/
+
+
+/* adop */
+
+@media (max-width:1224px){
+  .card {
+      scrollbar-width: none;
+      width: 100%;
+      justify-content: center;
+    }
+  .tabcontent, #master_classes, #return, 
+  #order_tracking, #payment, #delivery{
+      width: 100%;
+  }
+  .content_clients{
+    flex-direction: column;
+  }
+  .tab{
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+
+  
+  .tab button{
+    font-size: 16px;
+    text-align: center;
+    width: 25%;
+}
+
+
+}
+
+
+@media (max-width:1000px){
+
+    .title{
+        font-size: 20px;
+    }
+
+    .content_clients{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+   
+
+    .tab button{
+        font-size: 16px;
+        text-align: center;
+        width: 25%;
+    }
+
+
+    .photo_personal_data{
+      flex-direction: column;
+align-items: center;
+    }
+
+    .photo{
+      justify-content: center;
+      margin-bottom: 5%;
+    }
+
+    .personal_data{
+      width: 90%;
+    }
+
+    .cards_delivery{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .cards{
+      width: 90%;
+      margin-bottom: 5%;
+    }
+
+    .delivery{
+      width: 90%;
+      margin-bottom: 5%;
+    }
+}
+
+
+@media (max-width:700px){
+
+    .tab button{
+        width: 100%;
+    }
+
+    h3, .ld{
+      font-size: 16px;
+    }
+
+    label, p{
+      font-size: 14px;
+    }
+
+
+}
+
+@media (max-width: 590px){
+
+  .personal_data, .cards, .delivery{
+    padding: 0;
+  }
+
+  .change{
+    justify-content: center;
+  }
+
+  .personal{
+    width: 100%;
+  }
+
+  .local{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .local_data{
+    align-items: center;
+  }
+
+  .sex{
+    width: auto;
+    justify-content: center;
+  }
+
+  .bday{
+    align-items: center;
+  }
+
+  .delivery_address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .delivery_title, .cards_title, .change, .track_number_name{
+    justify-content: center;
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 490px){
+    .tab button{
+        font-size: 14px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .cards_pay{
+      padding-top: 0;
+    }
+
+    #cards_title_ok{
+      justify-content: flex-start;
+    }
+    #ld{
+      display: none;
+    }
+}
+
+
+/*-----------------delivery_product-------------------*/
+
+.delivery_product{
+  display: flex;
+  width: 100%;
+}
+
+.delivery_product_info{
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background-color: #CAC48D;
+  border: 1px solid #000;
+  padding: 16px;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.imge {
+  display: flex;
+  width: 50%;
+  margin-right: 5%;
+}
+
+.imge img {
+  border-radius: 30px;
+}
+
+#review_info_name, #delivery_product_track_number{
+margin: 0;
+}
+
+
+.info_description{
+  display: flex;
+  align-items: center;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.delivery_product_recording{
+  display: flex;
+  width: 25%;
+  justify-content: center;
+
+}
+
+.delivery_product_name_track{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.add-to-cart{
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #FDDBAD;
+  width: 100%;
+  height: 40px;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: 125.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.delivery_product_track_number{
+  display: flex;
+  
+  margin-bottom: 10%;
+}
+
+.add-to-cart:hover{
+  color: rgb(0, 0, 0);
+background: #A1CA8D;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.add-to-cart:active{
+  background: #8DCA93;
+}
+
+/*---------------------*/
+
+
+@media (max-width:1000px){
+  .delivery_product_info {
+    justify-content: space-between;
+  }
+
+  .imge {
+    margin-right: 10%;
+    width: 70%;
+  }
+  .delivery_product_recording {
+    width: 40%;
+}
+
+}
+
+@media (max-width:900px){
+
+.delivery_product_recording {
+      width: 40%;
+  }
+
+  p{
+    font-size: 14px;
+  }
+  
+}
+
+
+@media (max-width:700px){
+
+  .delivery_product_info{
+    flex-direction: column;
+  }
+
+  #delivery_product_info{
+    flex-direction: inherit;
+  }
+
+  .info_description{
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .imge{
+    margin: 0;
+    width: 50%;
+  }
+
+  .delivery_product_recording {
+    width: 70%;
+  }
+
+}
+
+@media (max-width: 500px){
+  .info_description {
+    flex-direction: column;
+  } 
+
+  .imge {
+    justify-content: center;
+  }
+
+
+  .add-to-cart{
+    text-transform: lowercase;
+  }
+
+}
+
+@media (max-width: 700px){
+
+  #delivery_product_info{
+    flex-direction: column;
+  }
+
+  .delivery_product_name_track {
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: initial;
+  }
+}
+
+
+/*hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh*/
+.signup{
+border: 1px solid black;
+border-radius: 20px;
+background-color: #FDDBAD;
+width: 100%;
+height: 40px;
+font-family: 'Montserrat';
+font-size: 14px;
+line-height: 125.5%;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+text-transform: uppercase;
+gap: 3vh;
+}
+
+.signup:hover {
+  color: rgb(0, 0, 0);
+  background: #A1CA8D;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+
+/*---------------------*/
+
+.form_input._error::before{
+  box-shadow: 0 0 15px red;
+}
+
+/*---------------------*/
+
+.dt {
+  font-weight: 500;
+}
+
+.delivery_type{
+  display: flex;
+  gap: 5vh;
+  margin: 2% 0 2% 0;
+}
+
+textarea {
+  resize: none;
+  width: 90%;
+  height: 8vh;
+  border: none;
+  background: #FFFFFF;
+  border: 1px solid #000;
+  border-radius: 20px;
+  padding: 30px;
+  font-family: 'Montserrat';
+  margin-bottom: 5%;
+  font-size: 14px;
+}
+
+/* Add a background color when the inputs get focus */
+textarea:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+@media (max-width:1000px){
+
+  textarea{
+      height: 10vh;
+  }
+
+ 
+}
+
+/*------------------------------*/
+
+.master_classes{
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  margin-bottom: 5%;
+}
+
+.master_classes_info {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background-color: #CAC48D;
+  border: 1px solid #000;
+  padding: 16px;
+}
+
+.imge{
+  display: flex;
+  width: 20%;
+}
+
+
+.imge img{
+  border-radius: 30px;
+  width: 150px;
+  height: 150px;
+}
+
+.master_classes_name_rating{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.master_classes_recording{
+  display: flex;
+  width: 25%;
+  justify-content: center;
+}
+
+.prise{
+  display: flex;
+}
+
+.review_info_name{
+
+}
+
+.info_card_description{
+  margin-bottom: 2%;
+  gap: 2vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content_toggle {
+	display: inline-block;
+	font-size: 16px;
+	text-decoration: none;
+	color: #000;
+    border: none;
+    
+}
+.content_toggle:hover {
+	color: #000;
+    font-weight: 600;
+	
+}
+.content_toggle:active {
+
+}
+
+.content_toggle.open {
+
+}
+.content_toggle.open:hover {
+	
+}
+.content_toggle.open:active {
+	
+}
+
+
+/* adop */
+@media (max-width:1500px){
+  .master_classes_name_rating {
+      width: 40%;
+  }
+}
+
+@media (max-width:1300px){
+  .master_classes_name_rating {
+      width: 30%;
+  }
+}
+
+@media (max-width:1100px){
+  .master_classes_name_rating {
+      width: 20%;
+  }
+}
+
+@media (max-width:800px){
+  .tab button, #tab_delivery button{
+      width: 100%;
+  }
+  .master_classes_info {
+      flex-direction: column;
+  }
+  .imge{
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 5%;
+  }
+
+  .imge img{
+      width: 250px;
+  }
+  
+
+  .master_classes_name_rating {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+  .info_card_description{
+      display: flex;
+      width: 90%;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .prise{
+      margin-bottom: 5%;
+  }
+
+  .master_classes_recording {
+      width: 80%;
+  }
+  
+}
+
+@media (max-width:1024px){
+  .card {
+      scrollbar-width: none;
+      width: 100%;
+    }
+  #master_classes{
+      width: 100%;
+  }
+  #tab_delivery button{
+      width: 100%;
+  }
+  .tabcontent_Delivery{
+      width: 100%;
+  }
+}

@@ -1,0 +1,953 @@
+body{
+    margin: 0;
+    background-color: #EDE7DB;
+    font-family: 'Montserrat';  
+}
+
+
+html, body{
+    width: 100%;
+    height: 100%;
+} 
+
+.main{ 
+    max-width: 1920px;
+    margin: 1% 5% 0 5%;
+}
+
+  .content{
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+}
+
+.filter{
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+    align-items: center;
+    
+    
+}
+
+
+.form1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.titel{
+    display: flex;
+align-items: center;
+font-size: 28px;
+font-weight: 300;
+
+}
+
+.search-box{
+    margin-right: 5%;
+    position: relative;
+}
+
+.search-box input{
+    outline: none;
+
+}
+
+
+.search-box .search-btn{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    color: #000;
+    right: 10px;
+    top: 1px;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+
+
+
+
+.form1 input[type=text] {
+    width: 90%;
+    padding: 5px 10px 5px 10px;
+   
+    display: inline-block;
+    border: none;
+    background: white;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: 'Montserrat';
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+
+.filter_filter{
+
+}
+
+
+/* Кнопка выпадающего списка */
+#sort-asc, #sort-desc, #sort-rating {
+  background: none;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: 200px;
+  cursor: pointer;
+  text-align: inherit;
+}
+  
+
+
+
+
+
+  /* Кнопка выпадающего меню при наведении и фокусировке */
+  .dropbtn:hover, .dropbtn:focus {
+
+  }
+  
+  /* Контейнер <div> - необходим для размещения выпадающего содержимого */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Выпадающее содержимое (скрыто по умолчанию) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 5%;
+    border-radius: 20px;
+    border: 1px black solid;
+    
+  }
+  
+  /* Ссылки внутри выпадающего списка 
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }*/
+
+/*  .header{
+    display: flex;
+  }
+
+  .header:before{
+    content: '';
+    background-color: #3e9041;
+  }
+
+  .header_sort_body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header_sort_list{
+    display: flex;
+  }
+
+.header_sort_list li{
+  list-style: none;
+}
+  
+*/
+
+
+  a.underline{
+    font-size: 14px; /* размер шрифта относительно ширины браузера */
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    transition: color 0.8s, text-shadow 0.8s; /* для плавного изменения цвета и тени(свечения) ссылки */
+    padding: 10px 0 10px 0;
+    margin: 10%;
+  }
+
+
+  a.tablinks_sort {
+    font-size: 18px; /* размер шрифта относительно ширины браузера */
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    transition: color 0.8s, text-shadow 0.8s; /* для плавного изменения цвета и тени(свечения) ссылки */
+    padding: 10px 0 10px 0;
+    margin: 10%;
+    border-bottom: none;
+  }
+
+  a.underline:after, a.tablinks_sort:after {
+    content: '';
+    display: block;
+    position: absolute; /* позиционируем относительно ссылки */
+    bottom: 1%;
+    background: #000;
+    height: 5%; /* высота относительно высоты ссылки */
+    width: 0%; /* изначально ширина полосы подчеркивания равна 0% */
+    z-index: -1; /* ставим полосу подчеркивания позади текста ссылки */
+    transition: width 0.8s, opacity 0.8s, box-shadow 0.8s; /* для плавного изменения ширины, прозрачности, тени(свечения) */
+    border-radius: 100px;
+    opacity: 0; /* изначально полоса полностью прозрачна */
+    box-shadow: 0 0 16px rgba(42,157,143,0);
+    left: 0;
+  right: 0;
+  margin: 0 auto;
+  }
+  
+  /* При наведении на ссылку, псевдоэлемент :after становится непрозрачным и шириной 100% относительно текста ссылки*/
+  a.underline:hover:after, a.tablinks_sort:hover:after{
+    width: 100%;
+    opacity: 1;
+  }
+
+  .tablinks_sort button{
+    border-bottom: #EDE7DB;
+  }
+  .tablinks_sort button.active{
+    border-bottom: #000 solid 1px;
+  }
+  
+  /* Изменение цвета выпадающих ссылок при наведении курсора */
+  .dropdown-content a:hover {
+    
+    
+}
+
+
+  
+  /* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+.show{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+} 
+
+
+
+.sort{
+  display: flex;
+justify-content: center;
+margin: 1% 5% 1% 5%;
+flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+.catalog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+
+.card {
+  overflow-x: auto;
+}
+
+.tablink{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.tablink button {
+background: none;
+color: black;
+padding: 16px;
+font-size: 16px;
+border: none;
+width: 100%;
+cursor: pointer;
+text-align: inherit;
+
+} 
+
+/* Change background color of buttons on hover 
+.tablink button:hover {
+  border-bottom: 3px solid #000;
+
+}*/
+
+/* Create an active/current "tab button" class 
+.tablink button.active {
+  border-bottom: 3px solid #000;
+}*/
+
+a.tablinks_sort:hover{
+  
+}
+
+
+/*---------------------------------*/
+.card {
+  width: 100%;
+  overflow-x: auto;
+}
+
+
+.card {display: flex}
+
+
+.card::-webkit-scrollbar {
+  display: none;
+}
+
+
+#myBtnContainer{
+  display: flex;
+  color: black;
+  justify-content: center;
+  margin: 0 0 2% 0;
+}
+
+.sorting_content{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding-right: 16px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+.btn:hover {
+  font-weight: 600;
+}
+
+.tablinks_sort::after{
+  font-weight: 600;
+}
+
+/*.btn.active {
+  background-color: #8A2BE2;
+  color: black;
+  border-radius: 32px;
+}*/
+
+button{
+  background: none; 
+}
+
+
+
+@media (max-width:1024px){
+  .card {
+      scrollbar-width: none;
+      width: 100%;
+    }
+  .tabcontent, #Textile, #Souvenirs, 
+  #Joinery_production, #Shipyard, #Auto-moto-velo{
+      width: 100%;
+  }
+
+  .tablink{
+    flex-direction: inherit;
+  }
+  
+}
+
+
+
+
+
+
+/*
+
+.sorting-dropdown{
+  text-align: inherit;
+}
+
+.sorting_dropbtn, .sorting_dropbtn_1 {
+    color: #000;
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-bottom: black solid 2px;
+    transition: border-width 0.9s linear;
+    transition: font-weight 0.9s linear;
+    width: 100%;
+text-align: inherit;
+  }
+  
+  .sorting_dropbtn:hover, .dropbtn:hover{
+    border-bottom: black solid 3px;
+    font-weight: 400; 
+  }
+  .sorting_dropbtn:hover:after, .dropbtn:hover:after, .sorting_dropbtn:focus, .dropbtn:focus {
+    border-bottom: black solid 3px;
+  }
+  
+  
+  .sorting_content, .sorting_content_1 {
+    display: none;
+    width: 100%;
+    overflow: auto;
+  }
+  
+  .sorting_content a , .sorting_content_1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  */
+
+  
+  .flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+} 
+
+
+
+
+
+.sorting {
+  gap: 1rem;
+  display: flex;
+  width: 20%;
+  height: 50%;
+  flex-direction: column;
+}
+
+
+.sorting_list{
+  display: block;
+  width: 200px;
+  background: #C4C4C4;
+  padding: 3%;
+  border-radius: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.execut{
+  width: 78%;
+  display: flex;
+  margin-top: 1%;
+}
+
+.con_list {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.tabcontent{
+  width: 100%;
+}
+
+.nav-sss{
+  display: flex;
+  justify-content: center;
+}
+
+#nav, #nav2, #nav3, #nav4, #nav5{
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+/* -------------------------------------- */
+
+
+
+/* ----------------------------------------- */
+
+
+
+.nav-item {
+  align-items: center;
+  gap: 3rem;
+  float: left;
+  display: flex;
+  margin: 0 1%;
+  justify-content: center;
+}
+
+
+.filterDiv {
+  margin: 2px;
+  display: none;
+  width: 100%;
+  letter-spacing: 1px;
+
+}
+
+.filterDiv:hover{
+  
+}
+
+.imge{
+  overflow: hidden;
+  border-radius: 30px;
+  display: flex;
+}
+
+
+.box1_info_tip{
+  font-style: normal;
+  font-size: 24px;
+  color: #9c9c9c;
+  margin-top: 1%;
+}
+
+h3{
+  margin: 5%;
+}
+
+.box1_info_title{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  color: #000;
+}
+
+
+.box1_info_titl{
+  width: 250px;
+  margin: 5% 0 5% 0;
+  
+}
+ 
+
+
+
+.simple-rating{
+  position: relative;
+  font-size: 30px;
+  color: #F4B182;
+  display: inline-block;
+  margin-right: 5%;
+}
+
+.simple-rating:before{
+  content: "★";
+  display: block;
+}
+
+
+.box1_info_description{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  margin-bottom: 5%;
+}
+
+.add-to-cart {
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #FDDBAD;
+  width: 100%;
+  height: 50px;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  line-height: 125.5%;
+  margin: 5% 0 5% 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.add-to-cart:hover{
+  font-weight: 600;
+}
+
+a{
+  color: black;
+text-decoration:none
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+
+.btn:hover {
+  font-weight: 600;
+}
+
+
+/*.btn.active {
+  background-color: #8A2BE2;
+  color: black;
+  border-radius: 32px;
+}*/
+
+button{
+  background: none; 
+}
+
+
+
+
+/* модальное окно*/
+.popup{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  z-index: 60;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.3s ease 0s;
+}
+
+.popup:target{
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup_area{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+}
+
+.popup_body{
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+.popup_content{
+  background-color: #fefefe;
+  color: black;
+  width: 30%;
+  padding: 50px;
+  position: relative;
+  border: 2px black solid;
+  border-radius: 30px;
+}
+
+.popup_close{
+  position: absolute;
+  right: 25px;
+  top: 10px;
+  font-size: 40px;
+  text-decoration: none;
+  color: black;
+  font-weight: 200;
+}
+
+.popup_title{
+  font-size: 40px;
+  margin: 0 0 1em 0;
+}
+
+.popup_text{
+  
+}
+
+
+
+
+.tab {
+  overflow: hidden;
+  display: flex;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  background-color: #EDE7DB;
+  transition: 0.3s;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size: 16px;
+  font-family: 'Montserrat';
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #cac48d35;
+  border-radius: 20px;
+}
+
+
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #CAC48D;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+/* Style the tab content */
+#sign_up {
+  display: none;
+
+}
+
+
+
+
+
+
+
+input[type=text], input[type=password] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: white;
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: 'Montserrat';
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+.signupbtn {
+  background-color: #3e9041;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 20px;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.submit{
+  background-color: #3e9041;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+  border-radius: 20px;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+
+.clearfix{
+  width: 100%;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+
+
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid black;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+
+
+.popup_close:hover,
+.popup_close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+
+
+
+
+
+
+/* 666666666666666666666666 */
+
+@media (max-width:1902px){
+  .execut{
+    width: 75%;
+  }
+}
+
+
+
+
+@media (max-width:1025px){
+ .sorting{
+    
+    width: 100%;
+    justify-content: center;
+  }
+
+  .sorting_content {
+    margin-bottom: 5%;
+  }
+  /*
+  .sorting_content, .sorting_content_1 {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    overflow: auto;
+    background-color: #f1f1f1;
+    width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 20px;
+  }*/
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .execut{
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  img{
+
+  }
+}
+
+
+@media (max-width:867px){
+
+  .execut{
+       width: 100%;
+  }
+    
+  .create{    
+    font-size: 16px;
+    margin: 1% 1% 1% 0;
+  }
+ 
+}
+
+@media (max-width:767px){
+
+
+    .execut{
+        width: 100%;
+    }
+    
+.filter{
+    width: 100%;
+}
+
+
+    .create{    
+    font-size: 12px;
+    margin: 1% 1% 1% 0;
+    }
+
+
+}
+
+@media (max-width:467px){
+    .sorting{
+        width: 100%;
+    }
+
+   
+}
+

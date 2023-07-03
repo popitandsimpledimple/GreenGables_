@@ -1,0 +1,556 @@
+body{
+    margin: 0;
+    background-color: #EDE7DB;
+    font-family: 'Montserrat';  
+}
+
+@font-face {
+  font-family: "Montserrat";  
+  src: url("/assets/fonts/Montserrat/Montserrat-Italic.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal;
+   }
+   
+  @font-face{
+  font-family: "Italiana";
+  src: url("/assets/fonts/Italiana/Italiana-Regular.ttf") format("truetype");
+  font-style: normal; 
+  font-weight: normal; 
+  }
+
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    color: black;
+    text-decoration:none;
+    font-size: 16px;
+
+}
+
+.main{ 
+ /*   max-width: 1920px;*/
+margin: 1% 5% 0 5%;
+gap: 5vh;
+display: flex;
+flex-direction: column;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+}
+
+.filter{
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+    align-items: center;
+    
+    
+}
+
+
+.form1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.titel{
+    display: flex;
+align-items: center;
+font-size: 28px;
+font-weight: 300;
+
+}
+
+
+.search-box{
+    margin-right: 5%;
+    position: relative;
+}
+
+.search-box input{
+    outline: none;
+
+}
+
+
+.search-box .search-btn{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    color: #000;
+    right: 10px;
+    top: 1px;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+
+
+input[type=text] {
+    width: 90%;
+    padding: 5px 10px 5px 10px;
+   
+    display: inline-block;
+    border: none;
+    background: white;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: 'Montserrat';
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+
+
+
+
+.catalog_header, .sorting{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.sorting-dropdown{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.tablink{
+    display: flex;
+    width: 100%;
+}
+
+
+
+.tablink button{
+    display: flex;
+    border: none;
+    border-radius: 30px;
+    width: auto;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    height: 40px;
+    margin: 2%;
+}
+.tablinks_sort{
+    border: none;
+flex-grow: 3;
+transition: box-shadow 0.3s ease-in-out;
+}
+
+
+.card {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+}
+  
+  
+.card::-webkit-scrollbar {
+    display: none;
+}
+
+.tablinks_sort:hover{
+    box-shadow: 1px 2px 5px #bc6c25;
+}
+
+.active{
+    box-shadow: 1px 2px 5px #bc6c25;
+}
+
+  @media (max-width:1024px){
+    .card {
+        scrollbar-width: none;
+        width: 100%;
+      }
+    }
+
+    @media (max-width:900px){
+    .tablinks_sort {
+        font-size: 14px;
+        white-space: nowrap; /* Текст не переносится */
+        overflow: hidden; /* Обрезаем всё за пределами блока */
+        text-overflow: ellipsis; /* Добавляем многоточие */
+      }
+    }
+
+
+    @media (max-width: 850px) {
+        
+        .active {
+            width: 30px;
+          }
+          .tablinks_sort {
+            flex-grow: 0;
+          }
+
+          .tablink button {
+            height: auto;
+            padding: 1%;
+          }
+
+          .tablink {
+            justify-content: space-between;
+          }
+
+
+        .tablinks_sort a {
+          text-indent: -9999px; /* Скрываем текст */
+          display: block; /* Превращаем ссылку в блочный элемент */
+          width: 50px; /* Ширина иконки */
+          height: 50px; /* Высота иконки */
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: contain; /* Размер иконки */
+        }
+        .tablinks_sort:nth-of-type(1) a {
+          background-image: url(/assets/kit/catalog_header_icons/t-shirt.png); /* Добавляем первую иконку */
+          background-size: 50px;
+        }
+        .tablinks_sort:nth-of-type(2) a {
+          background-image: url(/assets/kit/catalog_header_icons/souvenir.png); /* Добавляем вторую иконку */
+          background-size: 50px;
+        }
+        .tablinks_sort:nth-of-type(3) a {
+          background-image: url(/assets/kit/catalog_header_icons/workshop.png); /* Добавляем третью иконку */
+          background-size: 50px;
+        }
+        .tablinks_sort:nth-of-type(4) a {
+          background-image: url(/assets/kit/catalog_header_icons/anchor.png); /* Добавляем четвертую иконку */
+          background-size: 50px;
+        }
+        .tablinks_sort:nth-of-type(5) a {
+          background-image: url(/assets/kit/catalog_header_icons/velocity.png); /* Добавляем пятую иконку */
+          background-size: 50px;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .tablinks_sort:nth-of-type(1) a {
+            background-image: url(/assets/kit/catalog_header_icons/t-shirt.png); /* Добавляем первую иконку */
+            background-size: 40px;
+          }
+          .tablinks_sort:nth-of-type(2) a {
+            background-image: url(/assets/kit/catalog_header_icons/souvenir.png); /* Добавляем вторую иконку */
+            background-size: 40px;
+          }
+          .tablinks_sort:nth-of-type(3) a {
+            background-image: url(/assets/kit/catalog_header_icons/workshop.png); /* Добавляем третью иконку */
+            background-size: 40px;
+          }
+          .tablinks_sort:nth-of-type(4) a {
+            background-image: url(/assets/kit/catalog_header_icons/anchor.png); /* Добавляем четвертую иконку */
+            background-size: 40px;
+          }
+          .tablinks_sort:nth-of-type(5) a {
+            background-image: url(/assets/kit/catalog_header_icons/velocity.png); /* Добавляем пятую иконку */
+            background-size: 40px;
+          }
+      }
+
+
+/*------------------------------*/
+#sort-asc, #sort-desc, #sort-rating {
+    background: none;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    width: 200px;
+    cursor: pointer;
+    text-align: inherit;
+  }
+
+  a.underline {
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    transition: color 0.8s, text-shadow 0.8s;
+    padding: 10px 0 10px 0;
+    margin: 10%;
+  }
+
+  a.underline:after{
+    content: '';
+    display: block;
+    position: absolute; /* позиционируем относительно ссылки */
+    bottom: 1%;
+    background: #000;
+    height: 5%; /* высота относительно высоты ссылки */
+    width: 0%; /* изначально ширина полосы подчеркивания равна 0% */
+    z-index: -1; /* ставим полосу подчеркивания позади текста ссылки */
+    transition: width 0.8s, opacity 0.8s, box-shadow 0.8s; /* для плавного изменения ширины, прозрачности, тени(свечения) */
+    border-radius: 100px;
+    opacity: 0; /* изначально полоса полностью прозрачна */
+    box-shadow: 0 0 16px rgba(42,157,143,0);
+    left: 0;
+  right: 0;
+  margin: 0 auto;
+  }
+  
+  /* При наведении на ссылку, псевдоэлемент :after становится непрозрачным и шириной 100% относительно текста ссылки*/
+  a.underline:hover:after{
+    width: 100%;
+    opacity: 1;
+  }
+
+  .catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .execut {
+    width: 100%;
+    display: flex;
+    margin-top: 1%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .con_list {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .tabcontent {
+    width: 100%;
+    gap: 5vh;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .sorting_content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  #myBtnContainer {
+    display: flex;
+    color: black;
+    justify-content: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .btn {
+    outline: none;
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    border: none;
+    border-radius: 30px;
+    width: auto;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin: 1%;
+    padding: 12px;
+  }
+
+  .btn:hover {
+    box-shadow: 1px 2px 5px #bc6c25;
+  }
+
+
+  .sort {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-sss {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #nav {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .nav-item {
+    align-items: center;
+    gap: 3rem;
+    float: left;
+    display: flex;
+    margin: 0 1%;
+    justify-content: center;
+  }
+
+  .show {
+    display: block;
+  }
+  .filterDiv {
+    margin: 2px;
+    display: none;
+    width: 100%;
+    letter-spacing: 1px;
+  }
+  .show {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imge {
+    overflow: hidden;
+    border-radius: 30px;
+    display: flex;
+    height: 300px;
+    width: 250px;
+  }
+
+  img{
+    width: 100%;
+  }
+
+  .box1_info_title {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    color: #000;
+  }
+
+  .box1_info_title {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    color: #000;
+    width: 250px;
+    margin: 5% 0 5% 0;
+  }
+
+  .box1_info_titl{
+    font-size: 14px;
+    white-space: nowrap; /* Текст не переносится */
+    overflow: hidden; /* Обрезаем всё за пределами блока */
+    text-overflow: ellipsis; /* Добавляем многоточие */
+}
+
+  .box1_info_description {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    margin-bottom: 5%;
+  }
+
+  .simple-rating {
+    position: relative;
+    font-size: 30px;
+    color: #F4B182;
+    display: inline-block;
+    margin-right: 5%;
+  }
+
+  .simple-rating::before {
+    content: "★";
+    display: block;
+  }
+  .simple-rating {
+    font-size: 30px;
+    color: #F4B182;
+  }
+
+  .box1_info_tip {
+    font-style: normal;
+    font-size: 24px;
+    color: #9c9c9c;
+    margin-top: 1%;
+  }
+
+  .add-to-cart {
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #FDDBAD;
+    width: 100%;
+    height: 50px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 125.5%;
+    margin: 5% 0 5% 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  .add-to-cart {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 125.5%;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .add-to-cart:hover {
+    font-weight: 600;
+  }
+
+  @media (max-width: 850px) {
+
+    .btn:hover {
+        box-shadow: 1px 2px 5px #bc6c25;
+      }
+  }
+
+  @media (max-width: 310px) {
+  .imge {
+    overflow: hidden;
+    border-radius: 30px;
+    display: flex;
+    width: 70%;
+    height: 25vh;
+    justify-content: center;
+  }
+
+  .show {
+    display: flex;
+  }
+
+  .filterDiv {
+    align-items: center;
+  }
+
+  .box1_info_tip {
+    display: flex;
+    width: 100%;
+  }
+
+}

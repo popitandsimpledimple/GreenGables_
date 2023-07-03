@@ -1,0 +1,852 @@
+body{
+    margin: 0;
+    background-color: #EDE7DB;
+    font-family: 'Montserrat';  
+    overflow-x: hidden;
+}
+
+ 
+
+html, body{
+    width: 100%;
+    height: 100%; 
+}
+
+
+
+svg{
+    width: 100%;
+}
+
+#svg-back {
+    z-index: -50;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0;
+  }
+
+#earth3,
+#earth1,
+#earth,
+#flowers{
+    cursor: pointer;
+    transform-box: fill-box;
+}
+
+
+#flowers16{
+    animation: flowers16 ease-in-out 4s infinite alternate;
+    transform-origin: bottom;
+}
+
+@keyframes flowers16{
+    0%{transform: rotate(5deg);}
+    
+}
+
+#flowers15{
+    animation: flowers15 ease-in-out 2s infinite alternate;
+    transform-origin: bottom;
+}
+
+@keyframes flowers15{
+    0%{transform: rotate(5deg);}
+    
+}
+
+#flowers14{
+    animation: flowers14 ease-in-out 6s infinite alternate;
+    transform-origin: right;
+}
+
+@keyframes flowers14{
+    0%{transform: rotate(-3deg);}
+    
+}
+
+#flowers13{
+    animation: flowers13 ease-in-out 6s infinite alternate;
+    transform-origin: bottom;
+}
+
+@keyframes flowers13{
+    0%{transform: rotate(-7deg);}
+}
+
+#flowers12{
+    animation: flowers12 ease-in-out 4s infinite alternate;
+    transform-origin: bottom;
+}
+
+@keyframes flowers12{
+    0%{transform: skew(-5deg);}
+}
+
+#flowers11{
+    animation: flowers13 ease-in-out 6s infinite alternate;
+    transform-origin: bottom;
+}
+
+
+#flowers10{
+    animation: flowers16 ease-in-out 4s infinite alternate;
+    transform-origin: bottom;
+}
+
+
+#flowers9{
+    animation: flowers12 ease-in-out 4s infinite alternate;
+    transform-origin: bottom;
+}
+#flowers8{
+    animation: flowers15 ease-in-out 6s infinite alternate;
+    transform-origin: bottom;
+}
+#flowers7{
+    animation: flowers12 ease-in-out 4s infinite alternate;
+    transform-origin: bottom;
+}
+#flowers6{
+    animation: flowers16 ease-in-out 6s infinite alternate;
+    transform-origin: bottom;
+}
+#flowers5{
+    animation: flowers14 ease-in-out 6s infinite alternate;
+    transform-origin: left;
+}
+#flowers4{
+    animation: flowers14 ease-in-out 2s infinite alternate;
+    transform-origin: bottom;
+}
+
+#flowers3{
+    animation: flowers14 ease-in-out 2s infinite alternate;
+    transform-origin: bottom;
+}
+
+/*------------------------------*/
+
+
+
+
+
+
+.main{ 
+    max-width: 1920px;
+    opacity: 0;
+    transition: opacity 0.8s ease 0s;
+}
+
+.main._loaded{
+    opacity: 1;
+}
+
+.page_pagination._loaded{
+    transform: translate(0px, -50%);
+    opacity: 1;
+    visibility: visible;
+    transition: transform 0.6s ease 0.8s;
+}
+
+.main.free .page_pagination{
+    transform: translate(50px, -50%);
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+
+.page{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+
+
+.page_wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*------------------------------*/
+
+
+.page_screen{
+
+}
+
+
+.page_pagination{
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translate(70px, -50%);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    visibility: hidden;
+}
+
+
+
+/*------------------------------*/
+
+.screen{
+    flex: 1 0 100%;
+    position: relative;
+}
+
+.screen_catalog_landing{
+    flex: 1 0 100%;
+    position: relative;
+}
+
+
+.page_bullet{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 10px 0;
+    border-radius: 50%;
+    transition: background-color 0.3s ease 0s;
+}
+
+.page_bullet_active{
+    background-color: #FDDBAD;
+}
+
+.page_scroll{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+}
+
+
+
+/*------------------------------*/
+
+.main-container1{
+
+    margin-bottom: 5%;
+}
+
+#main-content{
+    margin: 15% 10% 10% 10%;
+}
+ 
+#main-content-h1{
+    font-family: 'Italiana';
+    font-size: 100px;
+    margin: 0 0 5% 0;
+}
+
+#main-content-h3{
+    margin: 0 0 5% 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#main-content-intro-butt{
+    background-color: #FDDBAD;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0 0 5% 0;
+}
+
+#main-content-intro-butt a{
+    color: black;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration:none ;
+
+}
+
+#main-content-intro-butt span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#main-content-intro-butt span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  #main-content-intro-butt:hover span {
+    padding-right: 25px;
+  }
+  
+  #main-content-intro-butt:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+
+  /* о нас*/
+
+ .title{
+    font-size: 35px;
+    text-align:center;
+    margin: 5% 0 0 0;
+    font-weight: 600;
+    
+ } 
+
+ .about{
+    position: relative;
+   z-index: 2;
+   width: 100%;
+    margin: 0 auto;
+    margin-top: 7%;
+    background-image: url("/assets/img/intro/tree12.png");
+    background-size: 926.4px 761.54px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    height: 100%;
+    bottom: 0;
+    position: absolute;
+    background-color: #ede7db;
+ }
+
+ #about-container{
+     margin: 5% 10% 0 10%;
+     display: flex;
+    
+ }
+
+#about-item{
+    width: 60%;
+}
+
+.about-text{
+ font-family: Montserrat;
+ font-size: 18px;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: -0.015em;
+text-align: left;
+
+}
+ 
+/*  контакты */
+
+/* .location_contacts{
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+
+} */
+
+.location_contacts {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-top: 7%;
+    height: 100%;
+    bottom: 0;
+    position: absolute;
+    background-color: #ede7db;
+  }
+
+.location_contacts_info{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 10% 0 10%;
+  }
+
+  .location{
+    display: flex;
+    width: 70%;
+  }
+
+  iframe{
+    display: flex;
+    width: 800px;
+    height: 700px;
+    border: 1px solid black;
+    border-radius: 30px;
+  }
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+}
+
+.contacts-info{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: -0.015em;
+    text-align: left;
+}
+
+.info{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaa 
+
+@media screen and (width: 1920px) and (height: 1080px){
+    #svg-back {
+        top: 34%;
+    }
+}*/
+
+
+@media screen and (max-width: 1680px){
+    #svg-back{
+        width: 100%;
+    }
+
+    iframe {
+        display: flex;
+        width: 800px;
+        height: 400px;
+    }
+
+
+}
+
+
+@media screen and (min-width: 1840px){
+    #main-content{
+        margin-top: 10%;
+    }
+
+    
+}
+@media screen and (max-width: 1500px){
+    .location_contacts_info{
+        flex-direction: column;
+    }
+    .contacts{
+        flex-direction: initial;
+    }
+
+    #svg-back {
+        width: 1900px;
+        right: -160px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1240px){
+.about {
+        background-image: url("/assets/img/intro/tree12.png");
+        background-size: 726.4px 561.54px;
+      }
+}
+
+
+@media screen and (max-width: 1300px){
+    .screen{
+        flex: 1 0 108%;
+    }
+
+    #svg-back{
+        bottom: 7%;
+    }
+
+    iframe {
+        display: flex;
+        width: 600px;
+        height: 700px;
+      }
+
+      .about {
+        background-image: url("/assets/img/intro/tree12.png");
+        background-size: 726.4px 561.54px;
+      }
+    
+}
+
+@media screen and (max-width: 1300px){
+    iframe {
+        display: flex;
+        width: 500px;
+        height: 400px;
+    }
+
+    .info{
+        font-size: 16px;
+    }
+    .title {
+        font-size: 30px;
+    }
+
+    .contacts-info, .about-text{
+        font-size: 14px;
+    }
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 770px){
+    .location_contacts_info{
+        flex-direction: column;
+        height: 100%;
+        justify-content: flex-start;
+    }
+
+    .location_contacts{
+        position: relative;
+        top: 5%;   
+    }
+    .page_pagination._loaded{
+        display: none;
+    }
+
+    .contacts-info, .about-text{
+        font-size: 16px;
+    }
+
+    .location {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10%;
+        height: 50%;
+    }
+
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+
+    .contacts{
+        flex-direction: initial;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .contacts-info {
+        width: 30%;
+        text-align: center;
+      }
+
+    #main-content {
+        text-align: center;
+        background-color: #dbbe9ed4;
+        box-shadow: 0 0 30px rgba(0,0,0,0.6);
+        border-radius: 30px;
+        padding: 30px;
+        gap: 5vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main-content-h1{
+        font-size: 90px;
+    }
+
+    #main-content-h3 {
+        margin: 0 0 5% 0;
+        font-size: 30px;
+        font-weight: 400;
+      }
+
+      #main-content-intro-butt {
+        border-radius: 30px;
+        width: 60%;
+        height: auto;
+        padding: 10px;
+      }
+    
+    #main-content-intro-butt a{
+        font-size: 30px;
+    }
+
+    .about {
+     background-image: none;
+        
+      }
+
+      .about-text {
+        text-align: center;
+      }
+
+    #about-container {
+        justify-content: center;
+      }
+
+     /* .page_pagination{
+        display: none;
+      }*/
+      #about-item {
+        width: 80%;
+      }
+      
+
+}
+
+/* @media screen and (max-height: 1080px){
+    .about{
+        height: 100%;
+    }
+    
+}
+
+@media screen and (max-height: 1030px){
+    #svg-back{
+        width: 1900px;
+        right: -160px;
+        top: 10%;
+    }
+
+    iframe {
+        display: flex;
+        width: 600px;
+        height: 700px;
+      }
+}
+
+
+@media screen and (max-height: 900px){
+    #svg-back{
+        width: 1900px;
+        right: -160px;
+        top: 0;
+    }
+
+    iframe{
+        width: 500px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-height: 770px){
+    #svg-back{
+        width: 1900px;
+   
+        top: 0;
+    }
+
+  
+
+    iframe {
+        display: flex;
+        width: 500px;
+        height: 400px;
+      }
+
+    .intro{
+        flex-direction: column-reverse;
+        display: flex;
+        overflow: hidden;
+    }
+    .main-container1{
+        margin-bottom: 15%;
+    }
+
+    .about{
+        top: 5%;
+    }
+
+    .catalog_landing{
+        top: 5%;
+    }
+
+    .location_contacts{
+        position: relative;
+        top: 5%;
+    }
+    #main-content {
+        margin: 0 10% 0 10%;
+      }
+
+      .about-text {
+        text-align: center;
+      }
+      .about{
+        background-image: none;
+    }
+
+    #about-container {
+        justify-content: center;
+      }
+
+
+}
+
+@media screen and (max-height: 720px){
+    #svg-back {
+        top: 90px;
+    }
+
+    
+}
+
+@media screen and (max-height: 620px){
+    #svg-back {
+        top: 0px;
+    }
+} */
+
+@media screen and (max-width: 650px){
+    #svg-back {
+        
+    }
+
+    .main-container1 {
+        margin-bottom: 20%;
+      }
+
+    #main-content-h1 {
+        font-family: 'Italiana';
+        font-size: 70px;
+      }
+
+      #svg-back {
+        width: 1900px;
+        right: -160px;
+       
+      }
+
+      .title {
+        font-size: 20px;
+        text-align: center;
+        margin: 15% 0 0 0;
+      }
+
+      #about-item {
+        width: 100%;
+      }
+
+
+/*
+      .page_pagination {
+        right: 20px;
+        display: none;
+      }*/
+}
+
+@media screen and (max-width: 500px){
+    #svg-back {
+        width: 1500px;
+    }
+
+    #main-content-intro-butt a {
+        font-size: 18px;
+      }
+
+    #main-content-h3 {
+        font-size: 16px;
+     }
+
+     .info {
+        font-size: 14px;
+        width: 20%;
+      }
+
+      .contacts-info, .about-text {
+        font-size: 14px;
+      }
+
+      .contacts-info{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        text-align: inherit;
+      }
+      
+      .contacts-title{
+        width: 70%;
+        text-align: end;
+      }
+
+      .contacts {
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+      }
+    /* #main-content {
+    margin: 25% 0% 10% 00%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    } */
+
+}
+
+/* @media screen and (min-height: 1080px){
+    .intro{
+        top: 15%;
+    }
+
+} 
+
+@media screen and (min-height: 400px){
+
+#main-content {
+    width: auto;
+    margin: 0 10% 40% 10%;
+  }
+
+  #main-content-h1 {
+    font-size: 40px;
+  }
+
+  #main-content-h3, #main-content-intro-butt a {
+    font-size: 16px;
+  }
+
+  .contacts-info, .about-text {
+    font-size: 14px;
+  }
+
+
+.contacts {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-height: 350px){
+    .about-text {
+        font-size: 13px;
+      }
+} */

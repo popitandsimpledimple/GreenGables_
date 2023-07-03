@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after{ box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat'
+} 
+
+html, body {
+    height: 100%;    
+  }
+
+body{
+    background: #EDE7DB;
+    font-family: 'Montserrat';
+}
+
+/* первая стр */
+.intro{
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+}
+.container_intro{
+    
+    width: 100%;
+    margin: 0 auto;
+}
+
+img{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -4;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+
+  }
+  
+  a:visited {
+    color:#0000;
+  }
+
+  button{
+    top: 80%;
+    left: 12%;
+    display: block;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background: #FDDBAD;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    border: 1px solid black;
+  }
+
+.gg_patt{
+    display: flex;
+    position: absolute;
+    top: 109%;
+    z-index: -4;
+}
+
+/* о нас */
+  
+.container_aboutUS{
+    display: flex;
+  flex-direction: unset;
+  flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
