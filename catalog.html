@@ -1,0 +1,1125 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title> GG</title>
+        <meta charset="UTF-8">
+        <link href="/assets/css/catalog.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@100;400&display=swap" rel="stylesheet"> 
+<script src="https://kit.fontawesome.com/3d0e27e432.js"></script>
+
+</head>
+        
+<body>
+
+<div class="main">
+
+    <div class="content"> 
+        
+        <div class="titel">
+            <div class="titel-text">
+                КАТАЛОГ
+            </div>
+            
+        </div>
+
+        <div class="filter">
+                <div class="search-box">
+                    <form>
+                        <input type="text" placeholder="Искать здесь..." class="form1">
+
+                        <div class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </div>
+
+                  </form>
+
+                </div>
+
+            
+        </div>
+    
+    </div>
+    
+<div class="sort">
+
+
+
+
+    <button id="sort-asc"><a href="#" class="underline">цена по возрастанию</a></button>
+    <button id="sort-desc"><a href="#" class="underline">цена по убыванию</a></button>
+    <button id="sort-rating"><a href="#" class="underline">рейтинг</a></button>
+ <!-- 
+  <div id="nav">
+        <div class="nav-item" data-sort="3" data-desc="2">тестовая строка 3</div>
+        <div class="nav-item" data-sort="4" data-desc="1">тестовая строка 4</div>
+        <div class="nav-item" data-sort="1" data-desc="4">тестовая строка 1</div>
+        <div class="nav-item" data-sort="2" data-desc="3">тестовая строка 2</div>
+    </div>
+-->
+
+</div>
+    
+
+<div class="catalog">
+
+    <div class="sorting">
+
+        <div class="sorting-dropdown">
+            <section class="card">
+                <div class="tablink">
+                    <button class="tablinks_sort" onclick="openCity(event, 'Textile')" id="defaultOpen"><a class="tablinks_sort"> Текстиль </a></button>
+                    <button class="tablinks_sort" onclick="openCity(event, 'Souvenirs')"> <a class="tablinks_sort"> Сувениры </a></button>
+                    <button class="tablinks_sort" onclick="openCity(event, 'Joinery_production')"><a class="tablinks_sort"> Столярная мастерская </a></button>
+                    <button class="tablinks_sort" onclick="openCity(event, 'Shipyard')"> <a class="tablinks_sort">Судоверфь</a></button>
+                    <button class="tablinks_sort" onclick="openCity(event, 'Auto-moto-velo')"><a class="tablinks_sort">Авто-мото-вело техника</a></button>
+                </div>
+            </section> 
+        </div>
+
+    <!--   <div class="sorting-dropdown">
+
+            <button onclick="sortingCatalog()" class="sorting_dropbtn_1"> Сувениры</button>
+            <div id="mysorting_1" class="sorting_content_1">
+                    sdfghjkl
+                <div id="myBtnContainer" onclick="Open();">
+                    <button class="btn" onclick="filterSelection('all')"> Отменить фильтр </button>
+                    <button class="btn" onclick="filterSelection('Bed sheets')"> Спортивные кимоно (Ги) для Бразильского Джиу-джитсу</button>
+                    <button class="btn" onclick="filterSelection('2d_designer')"> Постельное бельё</button>
+                    <button class="btn" onclick="filterSelection('motion_design')"> Столовый текстиль</button>
+                    <button class="btn" onclick="filterSelection('graphic_design')"> Рабочая одежда</button>
+                    <button class="btn" onclick="filterSelection('UX/UI')"> Трикотаж</button>
+                </div>
+
+            </div>
+        </div> --> 
+
+    </div>
+    
+
+    <div class="execut"> 
+
+        <div class="con_list">
+
+
+           <div id="Textile" class="tabcontent">                
+                <div id="mysorting" class="sorting_content">
+
+
+                    <section class="card" id="card2">
+                     
+                       <div id="myBtnContainer" onclick="Open();">
+                        <button class="btn" onclick="filterSelection('all')"> all </button>
+                        <button class="btn" onclick="filterSelection('Sports_kimonos')"> Спортивные кимоно (Ги) для Бразильского Джиу-джитсу</button>
+                        <button class="btn" onclick="filterSelection('Bed')"> Постельное бельё</button>
+                        <button class="btn" onclick="filterSelection('Table_textiles')"> Столовый текстиль</button>
+                        <button class="btn" onclick="filterSelection('Work_clothes')"> Рабочая одежда</button>
+                        <button class="btn" onclick="filterSelection('Knitwear')"> Трикотаж</button>
+                    </div>
+                    </section>
+    
+                        
+                    
+                </div>
+
+                <div class="nav-sss">
+
+                    <div id="nav" >
+                    <div class="nav-item" data-price="3500" data-rating="2"> 
+              
+                    <div class="filterDiv Sports_kimonos">
+    
+                        <div class="imge">
+                            <img src="http://placehold.it/250x300" alt="">
+                        </div>
+    
+                        <div class="box1_info_title">
+                           <div class="box1_info_titl"> 
+                            Спортивные кимоно (Ги)
+                           </div> 
+                            <div class="box1_info_description">
+                                <div class="simple-rating">
+                                <!--  <div class="simple-rating_items">
+                                        <input id="imple-rating_5" type="radio" class="simple-rating_item" name="simple-rating" value="5">
+                                        <label for="imple-rating_5" class="simple-rating_label"></label>
+                                    </div>--> 
+                                </div>
+                                
+                                <p>2</p>
+                            </div>
+                            <span class="prise">3500 <small>&#8381</small></span>
+                        </div>
+                        
+                        <div class="box1_info_tip"> 
+                            <button class="add-to-cart">
+                                <a href="#popup" onclick="document.getElementById('popup').style.display='block'" class="menu-item"> 
+                                    В корзину 
+                                </a>
+                            </button>
+                        </div>
+                    
+                    </div>
+                    
+                    
+                </div>
+    
+    
+                <div class="nav-item" data-price="4500" data-rating="1"> 
+                    <div class="filterDiv Bed">
+    
+                        <div class="imge">
+                            <img src="http://placehold.it/250x300" alt="">
+                        </div>
+    
+                        <div class="box1_info_title">
+                           <div class="box1_info_titl"> 
+                            Постельное бельё
+                           </div> 
+                            <div class="box1_info_description">
+                                <div class="simple-rating">
+                                <!--  <div class="simple-rating_items">
+                                        <input id="imple-rating_5" type="radio" class="simple-rating_item" name="simple-rating" value="5">
+                                        <label for="imple-rating_5" class="simple-rating_label"></label>
+                                    </div>--> 
+                                </div>
+                                
+                                <p>1</p>
+                            </div>
+                            <span class="prise">4500 <small>&#8381</small></span>
+                        </div>
+                        
+                        <div class="box1_info_tip"> 
+                            <button class="add-to-cart">
+                                <a href="/card_product.html"> 
+                                    В корзину 
+                                </a>
+                            </button>
+                        </div>
+                    
+                    </div>
+                </div>
+    
+                <div class="nav-item" data-price="1000" data-rating="4"> 
+                    <div class="filterDiv Table_textiles">
+    
+                        <div class="imge">
+                            <img src="http://placehold.it/250x300" alt="">
+                        </div>
+    
+                        <div class="box1_info_title">
+                           <div class="box1_info_titl"> 
+                            Столовый текстиль
+                           </div> 
+                            <div class="box1_info_description">
+                                <div class="simple-rating">
+                                <!--  <div class="simple-rating_items">
+                                        <input id="imple-rating_5" type="radio" class="simple-rating_item" name="simple-rating" value="5">
+                                        <label for="imple-rating_5" class="simple-rating_label"></label>
+                                    </div>--> 
+                                </div>
+                                
+                                <p>4</p>
+                            </div>
+                            <span class="prise">1000 <small>&#8381</small></span>
+                        </div>
+                        
+                        <div class="box1_info_tip"> 
+                            <button class="add-to-cart">
+                                <a href="#"> 
+                                    В корзину 
+                                </a>
+                            </button>
+                        </div>
+                        
+                    
+                    </div>
+                </div>
+    
+                <div class="nav-item" data-price="2000" data-rating="3"> 
+                    <div class="filterDiv Work_clothes">
+    
+                        <div class="imge">
+                            <img src="http://placehold.it/250x300" alt="">
+                        </div>
+    
+                        <div class="box1_info_title">
+                           <div class="box1_info_titl"> 
+                            Рабочая одежда
+                           </div> 
+                            <div class="box1_info_description">
+                                <div class="simple-rating">
+                                <!--  <div class="simple-rating_items">
+                                        <input id="imple-rating_5" type="radio" class="simple-rating_item" name="simple-rating" value="5">
+                                        <label for="imple-rating_5" class="simple-rating_label"></label>
+                                    </div>--> 
+                                </div>
+                                
+                                <p>3</p>
+                            </div>
+                            <span class="prise">2000 <small>&#8381</small></span>
+                        </div>
+                        
+                        <div class="box1_info_tip"> 
+                            <button class="add-to-cart">
+                                <a href="#"> 
+                                    В корзину 
+                                </a>
+                            </button>
+                        </div>
+                        
+                    
+                    </div>
+                </div>
+    
+                <div class="nav-item" data-price="3000" data-rating="3"> 
+                    <div class="filterDiv Knitwear">
+    
+                        <div class="imge">
+                            <img src="http://placehold.it/250x300" alt="">
+                        </div>
+    
+                        <div class="box1_info_title">
+                           <div class="box1_info_titl"> 
+                            Трикотаж
+                           </div> 
+                            <div class="box1_info_description">
+                                <div class="simple-rating">
+                                <!--  <div class="simple-rating_items">
+                                        <input id="imple-rating_5" type="radio" class="simple-rating_item" name="simple-rating" value="5">
+                                        <label for="imple-rating_5" class="simple-rating_label"></label>
+                                    </div>--> 
+                                </div>
+                                
+                                <p>3</p>
+                            </div>
+                            <span class="prise">3000 <small>&#8381</small></span>
+                        </div>
+                        
+                        <div class="box1_info_tip"> 
+                            <button class="add-to-cart">
+                                <a href="#"> 
+                                    В корзину 
+                                </a>
+                            </button>
+                        </div>
+                        
+                     
+                    
+                    </div>
+                </div>
+                </div>  
+
+                </div>
+              
+                
+
+            </div> 
+
+            <div id="Souvenirs" class="tabcontent">                
+                <div id="mysorting" class="sorting_content">
+
+                    
+
+                    <section class="card" id="card2">
+                      <!--   <div class="card--content"></div>
+                        <div class="card--content"></div>
+                        <div class="card--content"></div>
+                        <div class="card--content"></div>
+                        <div class="card--content"></div>
+                        <div class="card--content"></div>-->
+                       <div id="myBtnContainer" onclick="Open();">
+                        <button class="btn" onclick="filterSelection('all')"> all </button>
+                        <button class="btn" onclick="filterSelection('Children')"> Детское игровое оружие </button>
+                        <button class="btn" onclick="filterSelection('Ceramic ')"> Керамическая посуда</button>
+                        <button class="btn" onclick="filterSelection('Figurines ')"> Статуэтки сказочных персонажей</button>
+                        <button class="btn" onclick="filterSelection('Books')"> Книги </button>
+                        <button class="btn" onclick="filterSelection('Jewelry')"> Ювелирные изделия</button>
+                    </div>
+                    </section>
+    
+                        
+                    
+                </div>
+
+                <div class="nav-sss">
+                <div id="nav2">
+
+                    <div class="nav-item" data-price="3500" data-rating="2"> 
+                        <div class="filterDiv Children">
+        
+                            <div class="imge">
+                                <img src="http://placehold.it/250x300" alt="">
+                            </div>
+        
+                            <div class="box1_info_title">
+                            <div class="box1_info_titl"> 
+                                Детское игровое оружие
+                            </div> 
+                                <div class="box1_info_description">
+                                    <div class="simple-rating">
+                                    <!--  <div class="simple-rating_items">
+                                            <input id="imple-rating_5" type="radio" class="simple-rating_item" name="simple-rating" value="5">
+                                            <label for="imple-rating_5" class="simple-rating_label"></label>
+                                        </div>--> 
+                                    </div>
+                                    
+                                    <p>2</p>
+                                </div>
+                                <span class="prise">3500 <small>&#8381</small></span>
+                            </div>
+                            
+                            <div class="box1_info_tip"> 
+                                <button class="add-to-cart">
+                                    <a href="#popup" onclick="document.getElementById('popup').style.display='block'" class="menu-item"> 
+                                        В корзину 
+                                    </a>
+                                </button>
+                            </div>
+                        
+                        </div>
+                    </div>
+
+                    <div class="nav-item" data-price="4500" data-rating="1"> 
+                        <div class="filterDiv Ceramic ">
+        
+                            <div class="imge">
+                                <img src="http://placehold.it/250x300" alt="">
+                            </div>
+        
+                            <div class="box1_info_title">
+                            <div class="box1_info_titl"> 
+                                Постельное бельё
+                            </div> 
+                                <div class="box1_info_description">
+                                    <div class="simple-rating">
+                                    <!--  <div class="simple-rating_items">
+                                            <input id="imple-rating_5" type="radio" class="simple-rating_item" name="simple-rating" value="5">
+                                            <label for="imple-rating_5" class="simple-rating_label"></label>
+                                        </div>--> 
+                                    </div>
+                                    
+                                    <p>1</p>
+                                </div>
+                                <span class="prise">4500 <small>&#8381</small></span>
+                            </div>
+                            
+                            <div class="box1_info_tip"> 
+                                <button class="add-to-cart">
+                                    <a href="#"> 
+                                        В корзину 
+                                    </a>
+                                </button>
+                            </div>
+                        
+                        </div>
+                    </div>
+    
+                    <div class="nav-item" data-price="1000" data-rating="4"> 
+                        <div class="filterDiv Figurines">
+        
+                            <div class="imge">
+                                <img src="http://placehold.it/250x300" alt="">
+                            </div>
+        
+                            <div class="box1_info_title">
+                            <div class="box1_info_titl"> 
+                                Столовый текстиль
+                            </div> 
+                                <div class="box1_info_description">
+                                    <div class="simple-rating">
+                                    <!--  <div class="simple-rating_items">
+                                            <input id="imple-rating_5" type="radio" class="simple-rating_item" name="simple-rating" value="5">
+                                            <label for="imple-rating_5" class="simple-rating_label"></label>
+                                        </div>--> 
+                                    </div>
+                                    
+                                    <p>4</p>
+                                </div>
+                                <span class="prise">1000 <small>&#8381</small></span>
+                            </div>
+                            
+                            <div class="box1_info_tip"> 
+                                <button class="add-to-cart">
+                                    <a href="#"> 
+                                        В корзину 
+                                    </a>
+                                </button>
+                            </div>
+                            
+                        
+                        </div>
+                    </div>
+    
+                    <div class="nav-item" data-price="2000" data-rating="3"> 
+                        <div class="filterDiv Books">
+        
+                            <div class="imge">
+                                <img src="http://placehold.it/250x300" alt="">
+                            </div>
+        
+                            <div class="box1_info_title">
+                            <div class="box1_info_titl"> 
+                                Рабочая одежда
+                            </div> 
+                                <div class="box1_info_description">
+                                    <div class="simple-rating">
+                                    <!--  <div class="simple-rating_items">
+                                            <input id="imple-rating_5" type="radio" class="simple-rating_item" name="simple-rating" value="5">
+                                            <label for="imple-rating_5" class="simple-rating_label"></label>
+                                        </div>--> 
+                                    </div>
+                                    
+                                    <p>3</p>
+                                </div>
+                                <span class="prise">2000 <small>&#8381</small></span>
+                            </div>
+                            
+                            <div class="box1_info_tip"> 
+                                <button class="add-to-cart">
+                                    <a href="#"> 
+                                        В корзину 
+                                    </a>
+                                </button>
+                            </div>
+                            
+                        
+                        </div>
+                    </div>
+    
+                    <div class="nav-item" data-price="3000" data-rating="3"> 
+                        <div class="filterDiv Jewelry">
+        
+                            <div class="imge">
+                                <img src="http://placehold.it/250x300" alt="">
+                            </div>
+        
+                            <div class="box1_info_title">
+                            <div class="box1_info_titl"> 
+                                Трикотаж
+                            </div> 
+                                <div class="box1_info_description">
+                                    <div class="simple-rating">
+                                    <!--  <div class="simple-rating_items">
+                                            <input id="imple-rating_5" type="radio" class="simple-rating_item" name="simple-rating" value="5">
+                                            <label for="imple-rating_5" class="simple-rating_label"></label>
+                                        </div>--> 
+                                    </div>
+                                    
+                                    <p>3</p>
+                                </div>
+                                <span class="prise">3000 <small>&#8381</small></span>
+                            </div>
+                            
+                            <div class="box1_info_tip"> 
+                                <button class="add-to-cart">
+                                    <a href="#"> 
+                                        В корзину 
+                                    </a>
+                                </button>
+                            </div>
+                            
+                        
+                        
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+
+            </div>
+
+            <div id="Joinery_production" class="tabcontent">                
+                <div id="mysorting" class="sorting_content">
+
+
+                    <section class="card" id="card2">
+                      <!--   <div class="card--content"></div>
+                        <div class="card--content"></div>
+                        <div class="card--content"></div>
+                        <div class="card--content"></div>
+                        <div class="card--content"></div>
+                        <div class="card--content"></div>-->
+                       <div id="myBtnContainer" onclick="Open();">
+                        <button class="btn" onclick="filterSelection('all')"> all </button>
+                        <button class="btn" onclick="filterSelection('Childrens_sports')"> Детские спортивно-развивающие комплексы.</button>
+                        <button class="btn" onclick="filterSelection('Boards')"> Разделочные доски</button>
+                        <button class="btn" onclick="filterSelection('Furniture')"> Мебель из массива на заказ</button>
+                    </div>
+                    </section>
+    
+                        
+                    
+                </div>
+
+                
+                <div id="nav3" >
+                    <div class="nav-item" data-price="3500" data-rating="2"> 
+              
+                    <div class="filterDiv Childrens_sports">
+    
+                        <div class="imge">
+                            <img src="http://placehold.it/250x300" alt="">
+                        </div>
+    
+                        <div class="box1_info_title">
+                           <div class="box1_info_titl"> 
+                            Детские спортивно-развивающие комплексы
+                           </div> 
+                            <div class="box1_info_description">
+                                <div class="simple-rating">
+                                <!--  <div class="simple-rating_items">
+                                        <input id="imple-rating_5" type="radio" class="simple-rating_item" name="simple-rating" value="5">
+                                        <label for="imple-rating_5" class="simple-rating_label"></label>
+                                    </div>--> 
+                                </div>
+                                
+                                <p>2</p>
+                            </div>
+                            <span class="prise">3500 <small>&#8381</small></span>
+                        </div>
+                        
+                        <div class="box1_info_tip"> 
+                            <button class="add-to-cart">
+                                <a href="#popup" onclick="document.getElementById('popup').style.display='block'" class="menu-item"> 
+                                    В корзину 
+                                </a>
+                            </button>
+                        </div>
+                    
+                    </div>
+                    
+                    
+                </div>
+    
+                <div class="nav-item" data-price="4500" data-rating="1"> 
+                    <div class="filterDiv Boards">
+    
+                        <div class="imge">
+                            <img src="http://placehold.it/250x300" alt="">
+                        </div>
+    
+                        <div class="box1_info_title">
+                           <div class="box1_info_titl"> 
+                            Торцевые разделочные доски
+                           </div> 
+                            <div class="box1_info_description">
+                                <div class="simple-rating">
+                                <!--  <div class="simple-rating_items">
+                                        <input id="imple-rating_5" type="radio" class="simple-rating_item" name="simple-rating" value="5">
+                                        <label for="imple-rating_5" class="simple-rating_label"></label>
+                                    </div>--> 
+                                </div>
+                                
+                                <p>1</p>
+                            </div>
+                            <span class="prise">4500 <small>&#8381</small></span>
+                        </div>
+                        
+                        <div class="box1_info_tip"> 
+                            <button class="add-to-cart">
+                                <a href="#"> 
+                                    В корзину 
+                                </a>
+                            </button>
+                        </div>
+                    
+                    </div>
+                </div>
+    
+                <div class="nav-item" data-price="1000" data-rating="4"> 
+                    <div class="filterDiv Furniture">
+    
+                        <div class="imge">
+                            <img src="http://placehold.it/250x300" alt="">
+                        </div>
+    
+                        <div class="box1_info_title">
+                           <div class="box1_info_titl"> 
+                            Мебель из массива на заказ
+                           </div> 
+                            <div class="box1_info_description">
+                                <div class="simple-rating">
+                                <!--  <div class="simple-rating_items">
+                                        <input id="imple-rating_5" type="radio" class="simple-rating_item" name="simple-rating" value="5">
+                                        <label for="imple-rating_5" class="simple-rating_label"></label>
+                                    </div>--> 
+                                </div>
+                                
+                                <p>4</p>
+                            </div>
+                            <span class="prise">1000 <small>&#8381</small></span>
+                        </div>
+                        
+                        <div class="box1_info_tip"> 
+                            <button class="add-to-cart">
+                                <a href="#"> 
+                                    В корзину 
+                                </a>
+                            </button>
+                        </div>
+                        
+                    
+                    </div>
+                </div>
+    
+                </div>
+                
+
+            </div>
+
+            <div id="Shipyard" class="tabcontent">                
+                <div id="mysorting" class="sorting_content">
+
+
+                    <section class="card" id="card2">
+                      <!--   <div class="card--content"></div>
+                        <div class="card--content"></div>
+                        <div class="card--content"></div>
+                        <div class="card--content"></div>
+                        <div class="card--content"></div>
+                        <div class="card--content"></div>-->
+                       <div id="myBtnContainer" onclick="Open();">
+                        <button class="btn" onclick="filterSelection('all')"> all </button>
+                        <button class="btn" onclick="filterSelection('Rack_canoes')"> Реечные каноэ </button>
+                        <button class="btn" onclick="filterSelection('Wooden_kayaks')"> Каяки из дерева </button>
+                        <button class="btn" onclick="filterSelection('Small_paper_boats')"> Лодки малых размеров из бумаги </button>
+                    </div>
+                    </section>
+    
+                        
+                    
+                </div>
+
+
+                <div id="nav4">
+                    <div class="nav-item" data-price="3500" data-rating="2"> 
+              
+                    <div class="filterDiv Rack_canoes">
+    
+                        <div class="imge">
+                            <img src="http://placehold.it/250x300" alt="">
+                        </div>
+    
+                        <div class="box1_info_title">
+                           <div class="box1_info_titl"> 
+                            Спортивные кимоно (Ги)
+                           </div> 
+                            <div class="box1_info_description">
+                                <div class="simple-rating">
+                                <!--  <div class="simple-rating_items">
+                                        <input id="imple-rating_5" type="radio" class="simple-rating_item" name="simple-rating" value="5">
+                                        <label for="imple-rating_5" class="simple-rating_label"></label>
+                                    </div>--> 
+                                </div>
+                                
+                                <p>2</p>
+                            </div>
+                            <span class="prise">3500 <small>&#8381</small></span>
+                        </div>
+                        
+                        <div class="box1_info_tip"> 
+                            <button class="add-to-cart">
+                                <a href="#popup" onclick="document.getElementById('popup').style.display='block'" class="menu-item"> 
+                                    В корзину 
+                                </a>
+                            </button>
+                        </div>
+                    
+                    </div>
+                    
+                    
+                </div>
+    
+    
+    <!-- asdfghjklkjhgfdsdfghj  -->
+    
+    
+                <div class="nav-item" data-price="4500" data-rating="1"> 
+                    <div class="filterDiv Wooden_kayaks">
+    
+                        <div class="imge">
+                            <img src="http://placehold.it/250x300" alt="">
+                        </div>
+    
+                        <div class="box1_info_title">
+                           <div class="box1_info_titl"> 
+                            Постельное бельё
+                           </div> 
+                            <div class="box1_info_description">
+                                <div class="simple-rating">
+                                <!--  <div class="simple-rating_items">
+                                        <input id="imple-rating_5" type="radio" class="simple-rating_item" name="simple-rating" value="5">
+                                        <label for="imple-rating_5" class="simple-rating_label"></label>
+                                    </div>--> 
+                                </div>
+                                
+                                <p>1</p>
+                            </div>
+                            <span class="prise">4500 <small>&#8381</small></span>
+                        </div>
+                        
+                        <div class="box1_info_tip"> 
+                            <button class="add-to-cart">
+                                <a href="#"> 
+                                    В корзину 
+                                </a>
+                            </button>
+                        </div>
+                    
+                    </div>
+                </div>
+    
+                <div class="nav-item" data-price="1000" data-rating="4"> 
+                    <div class="filterDiv Small_paper_boats">
+    
+                        <div class="imge">
+                            <img src="http://placehold.it/250x300" alt="">
+                        </div>
+    
+                        <div class="box1_info_title">
+                           <div class="box1_info_titl"> 
+                            Столовый текстиль
+                           </div> 
+                            <div class="box1_info_description">
+                                <div class="simple-rating">
+                                <!--  <div class="simple-rating_items">
+                                        <input id="imple-rating_5" type="radio" class="simple-rating_item" name="simple-rating" value="5">
+                                        <label for="imple-rating_5" class="simple-rating_label"></label>
+                                    </div>--> 
+                                </div>
+                                
+                                <p>4</p>
+                            </div>
+                            <span class="prise">1000 <small>&#8381</small></span>
+                        </div>
+                        
+                        <div class="box1_info_tip"> 
+                            <button class="add-to-cart">
+                                <a href="#"> 
+                                    В корзину 
+                                </a>
+                            </button>
+                        </div>
+                        
+                    
+                    </div>
+                </div>
+    
+
+                </div>
+                
+
+            </div>
+
+            <div id="Auto-moto-velo" class="tabcontent">                
+                <div id="mysorting" class="sorting_content">
+
+
+                    <section class="card" id="card2">
+                      <!--   <div class="card--content"></div>
+                        <div class="card--content"></div>
+                        <div class="card--content"></div>
+                        <div class="card--content"></div>
+                        <div class="card--content"></div>
+                        <div class="card--content"></div>-->
+                       <div id="myBtnContainer" onclick="Open();">
+                        <button class="btn" onclick="filterSelection('all')"> all </button>
+                        <button class="btn" onclick="filterSelection('Sports_kimonos')"> Спортивные кимоно (Ги) для Бразильского Джиу-джитсу</button>
+                        <button class="btn" onclick="filterSelection('Bed')"> Постельное бельё</button>
+                        <button class="btn" onclick="filterSelection('Table_textiles')"> Столовый текстиль</button>
+                        <button class="btn" onclick="filterSelection('Work_clothes')"> Рабочая одежда</button>
+                        <button class="btn" onclick="filterSelection('Knitwear')"> Трикотаж</button>
+                    </div>
+                    </section>
+    
+                        
+                    
+                </div>
+
+
+                <div id="nav5">
+                    <div class="nav-item" data-price="3500" data-rating="2"> 
+              
+                    <div class="filterDiv Sports_kimonos">
+    
+                        <div class="imge">
+                            <img src="http://placehold.it/250x300" alt="">
+                        </div>
+    
+                        <div class="box1_info_title">
+                           <div class="box1_info_titl"> 
+                            Спортивные кимоно (Ги)
+                           </div> 
+                            <div class="box1_info_description">
+                                <div class="simple-rating">
+                                <!--  <div class="simple-rating_items">
+                                        <input id="imple-rating_5" type="radio" class="simple-rating_item" name="simple-rating" value="5">
+                                        <label for="imple-rating_5" class="simple-rating_label"></label>
+                                    </div>--> 
+                                </div>
+                                
+                                <p>2</p>
+                            </div>
+                            <span class="prise">3500 <small>&#8381</small></span>
+                        </div>
+                        
+                        <div class="box1_info_tip"> 
+                            <button class="add-to-cart">
+                                <a href="#popup" onclick="document.getElementById('popup').style.display='block'" class="menu-item"> 
+                                    В корзину 
+                                </a>
+                            </button>
+                        </div>
+                    
+                    </div>
+                    
+                    
+                </div>
+    
+    
+    <!-- asdfghjklkjhgfdsdfghj  -->
+    
+    
+                <div class="nav-item" data-price="4500" data-rating="1"> 
+                    <div class="filterDiv Bed">
+    
+                        <div class="imge">
+                            <img src="http://placehold.it/250x300" alt="">
+                        </div>
+    
+                        <div class="box1_info_title">
+                           <div class="box1_info_titl"> 
+                            Постельное бельё
+                           </div> 
+                            <div class="box1_info_description">
+                                <div class="simple-rating">
+                                <!--  <div class="simple-rating_items">
+                                        <input id="imple-rating_5" type="radio" class="simple-rating_item" name="simple-rating" value="5">
+                                        <label for="imple-rating_5" class="simple-rating_label"></label>
+                                    </div>--> 
+                                </div>
+                                
+                                <p>1</p>
+                            </div>
+                            <span class="prise">4500 <small>&#8381</small></span>
+                        </div>
+                        
+                        <div class="box1_info_tip"> 
+                            <button class="add-to-cart">
+                                <a href="#"> 
+                                    В корзину 
+                                </a>
+                            </button>
+                        </div>
+                    
+                    </div>
+                </div>
+    
+                <div class="nav-item" data-price="1000" data-rating="4"> 
+                    <div class="filterDiv Table_textiles">
+    
+                        <div class="imge">
+                            <img src="http://placehold.it/250x300" alt="">
+                        </div>
+    
+                        <div class="box1_info_title">
+                           <div class="box1_info_titl"> 
+                            Столовый текстиль
+                           </div> 
+                            <div class="box1_info_description">
+                                <div class="simple-rating">
+                                <!--  <div class="simple-rating_items">
+                                        <input id="imple-rating_5" type="radio" class="simple-rating_item" name="simple-rating" value="5">
+                                        <label for="imple-rating_5" class="simple-rating_label"></label>
+                                    </div>--> 
+                                </div>
+                                
+                                <p>4</p>
+                            </div>
+                            <span class="prise">1000 <small>&#8381</small></span>
+                        </div>
+                        
+                        <div class="box1_info_tip"> 
+                            <button class="add-to-cart">
+                                <a href="#"> 
+                                    В корзину 
+                                </a>
+                            </button>
+                        </div>
+                        
+                    
+                    </div>
+                </div>
+    
+                <div class="nav-item" data-price="2000" data-rating="3"> 
+                    <div class="filterDiv Work_clothes">
+    
+                        <div class="imge">
+                            <img src="http://placehold.it/250x300" alt="">
+                        </div>
+    
+                        <div class="box1_info_title">
+                           <div class="box1_info_titl"> 
+                            Рабочая одежда
+                           </div> 
+                            <div class="box1_info_description">
+                                <div class="simple-rating">
+                                <!--  <div class="simple-rating_items">
+                                        <input id="imple-rating_5" type="radio" class="simple-rating_item" name="simple-rating" value="5">
+                                        <label for="imple-rating_5" class="simple-rating_label"></label>
+                                    </div>--> 
+                                </div>
+                                
+                                <p>3</p>
+                            </div>
+                            <span class="prise">2000 <small>&#8381</small></span>
+                        </div>
+                        
+                        <div class="box1_info_tip"> 
+                            <button class="add-to-cart">
+                                <a href="#"> 
+                                    В корзину 
+                                </a>
+                            </button>
+                        </div>
+                        
+                    
+                    </div>
+                </div>
+    
+                <div class="nav-item" data-price="3000" data-rating="3"> 
+                    <div class="filterDiv Knitwear">
+    
+                        <div class="imge">
+                            <img src="http://placehold.it/250x300" alt="">
+                        </div>
+    
+                        <div class="box1_info_title">
+                           <div class="box1_info_titl"> 
+                            Трикотаж
+                           </div> 
+                            <div class="box1_info_description">
+                                <div class="simple-rating">
+                                <!--  <div class="simple-rating_items">
+                                        <input id="imple-rating_5" type="radio" class="simple-rating_item" name="simple-rating" value="5">
+                                        <label for="imple-rating_5" class="simple-rating_label"></label>
+                                    </div>--> 
+                                </div>
+                                
+                                <p>3</p>
+                            </div>
+                            <span class="prise">3000 <small>&#8381</small></span>
+                        </div>
+                        
+                        <div class="box1_info_tip"> 
+                            <button class="add-to-cart">
+                                <a href="#"> 
+                                    В корзину 
+                                </a>
+                            </button>
+                        </div>
+                        
+                     
+                    
+                    </div>
+                </div>
+                </div>
+                
+
+            </div>
+            
+  
+             <!-- модальное окно  -->    
+
+             <div id="popup" class="popup">
+                <a href="#nav" class="popup_area"></a>
+                <div class="popup_body">
+                    <div class="popup_content">
+                        <a href="#nav" class="popup_close"> <span> × </span></a>
+                        <div class="tab">
+                            <button class="tablinks" onclick="openCity(event, 'lon_on')">Вход</button>
+                            <button class="tablinks" onclick="openCity(event, 'sign_up')">Регистация</button>
+                        </div>
+                        
+                        <div id="lon_on" class="tabcontent">
+                            <form action="">
+                                <div class="container">
+                                  <label for="email"><b>Email</b></label>
+                                    <input type="text" placeholder="Enter Email" name="email" required>
+                              
+                                  <label for="psw"><b>Пароль</b></label>
+                                  <input type="password" placeholder="Enter Password" name="psw" required>
+                                      
+                                  <button class="submit">Войти</button>
+                                  <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Запомнить меня
+                                  </label>
+                                </div>
+                              
+                                <div class="container">
+                                  
+                                  <span class="psw">Забыли <a href="#">пароль?</a></span>
+                                </div>
+                              </form>
+                        </div>
+                          
+                        <div id="sign_up" class="tabcontent">
+                            <form class="modal-content" action="">
+                                <div class="container">
+                                  <hr>
+                                  <label for="email"><b>Email</b></label>
+                                  <input type="text" placeholder="Enter Email" name="email"  required>
+                            
+                                  <label for="psw"><b>Пароль</b></label>
+                                  <input type="password" placeholder="Enter Password" name="psw" required>
+                            
+                                  <label for="psw-repeat"><b>Повторите пароль</b></label>
+                                  <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                                  
+                                  <label>
+                                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
+                                  </label>
+                            
+                                  
+                            
+                                  <div class="clearfix">
+                                    <button type="submit" class="signupbtn">Зарегистрироваться</button>
+                                  </div>
+                                </div>
+                              </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+</div>
+			
+</div>     
+
+
+ 
+
+<script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="/assets/js/catalog.js"></script>
+    <script src="/assets/js/header.js"></script>
+
+</html>

@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> GG basket</title>
+        <meta charset="UTF-8">
+        <link href="/assets/css/basket.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@100;400&display=swap" rel="stylesheet"> 
+<script src="https://kit.fontawesome.com/3d0e27e432.js"></script>
+
+
+</head>
+        
+<body>
+
+<main class="main">
+
+    <div class="content"> 
+        
+        <div class="title">
+            <div class="titel-text">
+                КОРЗИНА
+            </div>
+            
+        </div>
+    </div>
+
+     
+        
+        <div class="content_basket">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row" id="tovar">
+    
+                        <!-- Постельное бельё -->
+                        <div class="col-md-6">
+                            <div class="card mb-4" id="card-tovar" data-id="01">
+                                <img class="product-img" src="../assets/img/clothes.jpg" alt="">
+                                <div class="card-body text-center">
+                                    <h3 class="item-title">Постельное бельё</h3>
+                                    
+                                    <div class="box1_info_description">
+                                        <div class="simple-rating">
+                                        </div>
+                                        
+                                        <p>1</p>
+                                    </div>
+
+                                    <!--Счётчик-->
+                                    <div class="details-wrapper">
+                                        <div class="items counter-wrapper">
+                                            <div class="items__control" data-action="minus">-</div>
+                                            <div class="items__current" data-counter>1</div>
+                                            <div class="items__control" data-action="plus">+</div>
+                                        </div>
+    
+                                    <!-- // счётчик--> 
+
+                                        <div class="price">
+                                            
+                                            <div class="price__currency">4500 ₽</div>
+                                        </div>
+                                    </div>
+    
+                                    <button data-cart type="button" class="btn btn-block btn-outline-warning">В корзину</button>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // Постельное бельё -->
+    
+                        <!--  Спортивные кимоно (Ги) -->
+                        <div class="col-md-6">
+                            <div class="card mb-4" data-id="02">
+                                <img class="product-img" src="../assets/img/clothes.jpg" alt="">
+                                <div class="card-body text-center">
+                                    <h3 class="item-title"> Спортивные кимоно (Ги)</h3>
+                                    
+                                    <div class="box1_info_description">
+                                        <div class="simple-rating"> 
+                                        </div>
+                                        
+                                        <p>2</p>
+                                    </div>
+
+                                    <div class="details-wrapper">
+                                        <div class="items counter-wrapper">
+                                            <div class="items__control" data-action="minus">-</div>
+                                            <div class="items__current" data-counter>1</div>
+                                            <div class="items__control" data-action="plus">+</div>
+                                        </div>
+    
+                                        <div class="price">
+                                            
+                                            <div class="price__currency">3500 ₽</div>
+                                        </div>
+                                    </div>
+    
+                                    <button data-cart type="button" class="btn btn-block btn-outline-warning">в корзину</button>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //  Спортивные кимоно (Ги) -->
+    
+                        <!-- Детское игровое оружие -->
+                        <div class="col-md-6">
+                            <div class="card mb-4" data-id="03">
+                                <img class="product-img" src="../assets/img/clothes.jpg" alt="">
+                                <div class="card-body text-center">
+                                    <h3 class="item-title">Детское игровое оружие</h3>
+                                    
+                                    <div class="box1_info_description">
+                                        <div class="simple-rating">
+                                        </div>
+                                        
+                                        <p>2</p>
+                                    </div>
+
+                                    <div class="details-wrapper">
+                                        <div class="items counter-wrapper">
+                                            <div class="items__control" data-action="minus">-</div>
+                                            <div class="items__current" data-counter>1</div>
+                                            <div class="items__control" data-action="plus">+</div>
+                                        </div>
+    
+                                        <div class="price">
+                                            
+                                            <div class="price__currency">3500 ₽</div>
+                                        </div>
+    
+                                    </div>
+    
+                                    <button data-cart type="button" class="btn btn-block btn-outline-warning">в корзину</button>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // Детское игровое оружие -->
+    
+                        <!-- Рабочая одежда -->
+                        <div class="col-md-6">
+                            <div class="card mb-4" data-id="04">
+                                <img class="product-img" src="../assets/img/clothes.jpg" alt="">
+                                <div class="card-body text-center">
+                                    <h3 class="item-title">Рабочая одежда</h3>
+                                    
+                                    <div class="box1_info_description">
+                                        <div class="simple-rating">
+                                        <!--  <div class="simple-rating_items">
+                                                <input id="imple-rating_5" type="radio" class="simple-rating_item" name="simple-rating" value="5">
+                                                <label for="imple-rating_5" class="simple-rating_label"></label>
+                                            </div>--> 
+                                        </div>
+                                        
+                                        <p>3</p>
+                                    </div>
+    
+                                    <div class="details-wrapper">
+                                        <div class="items counter-wrapper">
+                                            <div class="items__control" data-action="minus">-</div>
+                                            <div class="items__current" data-counter>1</div>
+                                            <div class="items__control" data-action="plus">+</div>
+                                        </div>
+    
+                                        <div class="price">
+                                            
+                                            <div class="price__currency">2000 ₽</div>
+                                        </div>
+    
+                                    </div>
+    
+                                    <button data-cart type="button" class="btn btn-block btn-outline-warning">
+                                        в корзину
+                                    </button>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // Рабочая одежда -->
+    
+                    </div>
+                </div>
+                <div class="col-md-4">
+    
+                    <!-- Корзина ------------------------------------------------------>
+                    <div class="card mb-4">
+                        <div class="card-body order">
+                            <h5 class="card-title">Ваш заказ</h4>
+                            <div data-cart-empty class="alert alert-secondary" role="alert">
+                                Корзина пуста
+                            </div>
+                            <!-- cart-wrapper -->
+                            <div class="cart-wrapper">
+    
+                        
+    
+                            </div>
+                            <!-- // cart-wrapper -->
+    
+                            <!-- Стоимость заказа -->
+                            <div class="cart-total">
+                                <p data-cart-delivery class="none"><span class="h5">Доставка:</span> 
+                                    <span class="delivery-cost">1000 ₽</span> 
+                                </p>
+
+                                <p>
+                                    <span class="h5">Итого:</span> 
+                                    <span class="total-price">0</span> 
+                                    <span class="rouble">₽</span>
+                                </p>
+
+                            </div>
+                            <!-- // Стоимость заказа -->
+    
+                        </div>
+    
+                        <!-- Оформить заказ -->
+                        <div id="order-form" class="card-body border-top none payment ">
+                            <h5 class="card-title">Оформить заказ</h4>
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Ваш номер телефона">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Заказать</button>
+                            </form>
+                        </div>
+                        <!-- // Оформить заказ -->
+    
+                    </div>
+                    <!-- // Корзина -->
+    
+    
+                </div>
+            </div>
+        </div>
+          
+    
+
+
+
+</main>
+
+
+
+ 
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+<script src="/assets/js/basket/cartStatus.js"></script>
+
+<script src="/assets/js/basket/counter.js"></script>
+<script src="/assets/js/basket/cart1.js"></script>
+<script src="/assets/js/basket/CartPrice.js"></script>
+	
+
+</html>
+
+
+

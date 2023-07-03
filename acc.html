@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> GG acc</title>
+        <meta charset="UTF-8">
+        <link href="/assets/css/acc.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@100;400&display=swap" rel="stylesheet"> 
+<script src="https://kit.fontawesome.com/3d0e27e432.js"></script>
+
+
+</head>
+        
+<body>
+
+<main class="main">
+
+    <div class="content"> 
+        
+        <div class="title">
+            <div class="titel-text">
+                МОЙ АККАУНТ
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="content_clients">
+        <section class="card">
+            <div class="tab">
+                <button class="tablinks" onclick="openAcc(event, 'acc')" id="defaultOpen">Профиль</button>
+                <button class="tablinks" onclick="openAcc(event, 'delivery')" id="defaultOpen"> Доставка </button>
+                <button class="tablinks" onclick="openAcc(event, 'buy')">Покупки</button>
+                <button class="tablinks" onclick="openAcc(event, 'master_classe')">Мастер-классы</button>
+                <button class="tablinks" onclick="openAcc(event, 'support')">Тех.поддержка</button>
+             
+            </div>
+        </section>  
+          
+          <div id="acc" class="tabcontent">
+            <h3>Профиль</h3>
+
+            <div class="profile">
+                <form action="#" id="form">
+                <div class="photo_personal_data">
+ 
+                    <div class="personal_data">
+
+                        <div class="change">
+                            <h3 class="ld">Личные данные</h3>
+                            <button onclick="Mybtn()">  
+                                <a href="#" class="pen">
+                                    <ion-icon name="brush-outline"></ion-icon>
+                                </a>
+                            </button>
+                        </div>
+                        
+                        <br>
+
+                        <div class="local">
+                            <div class="personal">
+
+                                <div class="local_data" >
+                                    <input class="form_input _req" type="text" id="name" placeholder="ФИО" name="name" required maxlength="50" required disabled><br>
+                                    <input class="form_input _req " type="text" id="tl" placeholder="Телефон" name="tl" required maxlength="50" required disabled><br>
+                                    <input class="form_input _req _email" type="text" id="email" placeholder="Email" name="email" required maxlength="100" required disabled>
+
+                                </div>
+
+                            </div>
+                        
+
+                            <div class="personal">
+                                <div class="sex">
+                                    <input type="radio" id="male" name="gender" value="male" required disabled>
+                                    <label for="male">МУЖ</label><br>
+                                    <input type="radio" id="female" name="gender" value="female" required disabled>
+                                    <label for="female">ЖЕН</label><br>
+                                </div>
+
+                                <div class="bday">
+                                    <input type="date" id="date" placeholder="Дата рождения" name="date" required disabled />
+                                </div>
+
+                                <div class="delivery_address">
+                                    <input type="text" id="address" placeholder="Адрес доставки" name="address" required maxlength="120" disabled><br> 
+                                </div>
+
+                                
+
+                            </div>
+                        </div>
+                          
+                        <div class="btn_open" id="open_btn" style="display: none ;">
+                            <button type="submit" class="signup" onclick="Bun()" >
+                                <p>Сохранить</p>
+                                <a href="#" class="ok">   
+                                    <ion-icon name="checkmark-outline"></ion-icon>
+                                </a>
+                            </button>
+                        </div>
+                        </form>
+                    </div>
+
+                                      
+
+                </div>
+                <div class="cards_delivery">
+
+                    <div class="delivery">
+                        <div class="delivery_title">
+                            <h3 class="ld">Доставка</h3>
+                            <button onclick="Mybtndelivery()">  
+                                <a href="#" class="pen">
+                                    <ion-icon name="brush-outline"></ion-icon>
+                                </a>
+                            </button>
+                        </div>
+
+
+                        <form id="delivery-form">
+                            <h4 class="dt">Способ доставки:</h4>
+                           
+                            <div class="delivery_type">
+                                <input type="radio" id="delivery-type-door" name="delivery-type" value="До двери" required disabled>
+                                <label for="delivery-type-door">До двери</label><br>
+                            </div>
+                           
+                            <div class="delivery_type">
+                                <input type="radio" id="delivery-type-pickup" name="delivery-type" value="В ближайший пункт выдачи" required disabled>
+                                <label for="delivery-type-pickup">В ближайший пункт выдачи</label><br>
+                            </div>
+
+                            <div class="btn_open_delivery" id="open_btn_delivery" style="display: none ;">
+                                <button type="submit" class="signup" onclick="Bundelivery()" >
+                                    <p>Сохранить</p>
+                                    <a href="#" class="ok">   
+                                        <ion-icon name="checkmark-outline"></ion-icon>
+                                    </a>
+                                </button>
+                            </div>
+                        </form>
+
+
+                        <!-- <div class="track_number_name">
+                            <p>Трек номер заказа:</p>
+                        </div>
+
+                        <div class="track_number">
+                            <p>CA123466789RU</p>
+                        </div> -->
+
+                    </div>
+
+                </div>
+            </div>
+
+          </div>
+          
+          
+          <div id="delivery" class="tabcontent">
+            <h3>Доставка</h3>
+            <div class="delivery_product">
+                <div class="delivery_product_info" id="delivery_product_info">
+                    
+                        <div class="imge">
+                            <img src="../assets/img/clothes.jpg" alt="">
+                        </div>
+
+                        <div class="delivery_product_name_track" id="delivery_product_name_track">
+                            <div class="review_info_name" id="review_info_name">
+                               <p>
+                                NAME
+                               </p> 
+                            </div>
+                                
+                            <span class="delivery_product_track_number" id="delivery_product_track_number">
+                                <p>CA123466789RU</p>
+                            </span>
+
+                        </div>
+       
+                </div>
+
+                
+                
+            </div>
+            
+          </div>
+          
+          <div id="buy" class="tabcontent">
+            <h3>Покупки</h3>
+            
+            <div class="delivery_product">
+                <div class="delivery_product_info">
+                    <div class="info_description"> 
+                        <div class="imge">
+                            <img src="../assets/img/clothes.jpg" alt="">
+                        </div>
+
+                        <div class="delivery_product_name_track" id="r">
+                            <div class="review_info_name">
+                               <p>
+                                NAME
+                               </p> 
+                            </div>
+                                
+                            <span class="delivery_product_track_number">
+                                <p>CA123466789RU</p>
+                            </span>
+
+                        </div>
+
+                    </div>
+                            
+                    <div class="delivery_product_recording"> 
+                        <button class="add-to-cart" id="myBtn" >
+                           <a href="/review.html"> Написать отзыв </a> 
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="delivery_product">
+                <div class="delivery_product_info">
+                    <div class="info_description"> 
+                        <div class="imge">
+                            <img src="../assets/img/clothes.jpg" alt="">
+                        </div>
+
+                        <div class="delivery_product_name_track" id="r">
+                            <div class="review_info_name">
+                               <p>
+                                NAME
+                               </p> 
+                            </div>
+                                
+                            <span class="delivery_product_track_number">
+                                <p>CA123466789RU</p>
+                            </span>
+
+                        </div>
+
+                    </div>
+                            
+                    <div class="delivery_product_recording"> 
+                        <button class="add-to-cart" id="myBtn" >
+                            <a href="/review.html"> Написать отзыв </a> 
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="delivery_product">
+                <div class="delivery_product_info">
+                    <div class="info_description"> 
+                        <div class="imge">
+                            <img src="../assets/img/clothes.jpg" alt="">
+                        </div>
+
+                        <div class="delivery_product_name_track" id="r">
+                            <div class="review_info_name">
+                               <p>
+                                NAME
+                               </p> 
+                            </div>
+                                
+                            <span class="delivery_product_track_number">
+                                <p>CA123466789RU</p>
+                            </span>
+
+                        </div>
+
+                    </div>
+                            
+                    <div class="delivery_product_recording"> 
+                        <button class="add-to-cart" id="myBtn" >
+                            <a href="/review.html"> Написать отзыв </a> 
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+
+          <div id="master_classe" class="tabcontent">
+            <h3>Мастер-классы  </h3>
+            <!-- <a href="/admin.html#master_classe" class="change">Изменить</a> -->
+
+            <div class="master_classes">
+                <div class="master_classes_info">
+                            <div class="imge">
+                                <img src="/assets/img/sofa.jpg" alt="">
+                            </div>
+
+                            <div class="master_classes_name_rating">
+                                <div class="review_info_name">
+                                    NAME
+                                </div>
+
+
+                                <div class="info_card_description">                
+
+                                    
+                                    <a class="content_toggle" href="#">
+                                        <p id="p2">Описание &#9660;</p>
+                                    </a>
+                
+                                    <div class="content_block" style="display: none;">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Dolor dolore voluptas magnam velit, nemo nesciunt commodi 
+                                            dolores nihil, nulla doloribus id fugit 
+                                            consequatur deserunt fuga optio. Omnis tempora libero vel!
+                                        </p>
+                                    </div>
+
+                                </div> 
+
+                                <span class="prise">1000 <small>&#8381</small></span>
+
+                            </div>
+
+                            
+                </div>
+
+                
+            </div>
+
+          </div>
+ 
+          <div id="support" class="tabcontent">
+            <h3>Тех.поддержка</h3>
+
+            <form id="support-form">
+                <label for="name">Имя:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" class="_email" name="email"><br>
+                <label for="message">Сообщение:</label><br>
+                <textarea id="message" name="message" maxlength="500"></textarea><br>
+                <button class="signup" type="submit">Отправить</button>
+            </form>
+            
+         
+
+          </div>
+
+
+          
+    </div>
+
+
+
+</main>
+
+<script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+
+    <script src="/assets/js/acc.js"></script>
+</html>
+
+
+

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> GG товар</title>
+        <meta charset="UTF-8">
+        <link href="/assets/css/card.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@100;400&display=swap" rel="stylesheet"> 
+<script src="https://kit.fontawesome.com/3d0e27e432.js"></script>
+
+</head>
+        
+<body> 
+
+    <main class="main">
+
+        <div class="content"> 
+        
+            <div class="title">
+                <div class="titel-text">
+                    НАЗВАНИЕ ТОВАРА
+                </div>
+                
+                <a href="/admin.html#return" class="change">Изменить</a>
+                
+            </div>
+        </div>
+ 
+
+        <div class="card_product">
+
+            <div class="card">
+                <div class="imge">
+                    <img src="/assets/img/sofa.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="info_card">
+                <div class="info_card_cont">
+
+                    <div class="info_card_description">
+                    <p id="p1">Описание</p>
+
+                    <div class="product_color">
+                         <p> Цвет </p>
+                         
+                         <section class="card_color">
+                            <div class="color">
+
+                                <div class="color-btn" id="btn_coolor">
+                                    <button class="color-1" id="btn_color_1"></button>
+                                </div>
+
+                                <div class="color-btn" id="btn_coolor">
+                                    <button class="color-2" id="btn_color_2"></button>
+                                </div>
+
+                                <div class="color-btn" id="btn_coolor">
+                                    <button class="color-3" id="btn_color_3"></button>
+                                </div>
+
+                                <div class="color-btn" id="btn_coolor">
+                                    <button class="color-4" id="btn_color_4"></button>
+                                </div>
+
+                                
+
+                            </div>
+                        </section>
+                    </div>
+                    
+
+                   <!--  <button class="blue"></button>-->
+                    <div class="product_size">
+                        <p> Размер </p>
+                        
+                        <section class="card_size">
+                            <div class="card_size_btn">
+                                <button class="size_btn" id="size_btn_S">S</button>
+
+                                <button class="size_btn" id="size_btn_M">M</button>
+
+                                <button class="size_btn" id="size_btn_L">L</button>
+
+                            </div>
+                        </section>
+
+                    </div>
+                    
+                </div>
+
+                <div class="info_card_characteristic">                
+
+                    <button id="toggle-button">
+                        <a class="content_toggle" href="#">
+                            <p id="p2">Характеристика</p>
+                        </a>
+                    </button>
+                    
+                    <div id="text" style="display: none;">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Dolor dolore voluptas magnam velit, nemo nesciunt commodi 
+                             dolores nihil, nulla doloribus id fugit 
+                            consequatur deserunt fuga optio. Omnis tempora libero vel!
+                        </p>
+                    </div>
+                    
+                 <!--   <a class="content_toggle" href="#">
+                        <p id="p2">Характеристика &#9660;</p>
+                    </a>
+ 
+                    <div class="content_block" style="display: none;">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Dolor dolore voluptas magnam velit, nemo nesciunt commodi 
+                             dolores nihil, nulla doloribus id fugit 
+                            consequatur deserunt fuga optio. Omnis tempora libero vel!
+                        </p>
+                    </div>--> 
+
+                </div>
+
+                <div class="info_card_simple_rating_prise">
+                    <div class="info_card_simple_rating">
+                        <div class="simple-rating">
+                    <!--  <div class="simple-rating_items">
+                            <input id="imple-rating_5" type="radio" class="simple-rating_item" name="simple-rating" value="5">
+                            <label for="imple-rating_5" class="simple-rating_label"></label>
+                        </div>--> 
+                    
+                        </div>
+                    
+                        <p>5</p>
+                    </div>
+                    
+
+                    <span class="prise">1000 <small>&#8381</small></span>
+                </div>
+
+                <div class="box1_info_tip"> 
+                    <button class="add-to-cart" id="myBtn" >
+                            В корзину 
+                    </button>
+
+                    <button class="add-to-cart" >
+                        <a href="#"> 
+                            Купить
+                        </a>
+                    </button>
+
+                </div>
+
+                </div>
+                
+
+
+                <!-- модальное окно  -->    
+
+             <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">×</span>
+                  <p class="modal-content_text">Товар в добавлен в корзину</p>
+                </div>
+              
+              </div>
+            
+            </div>
+
+        </div>
+
+        <div class="review">
+
+            <div class="review_cont">
+                
+                <div class="review_title">
+                    отзывы
+                </div>
+             
+
+                <div class="review_intro" id="review_delete">
+
+                    <div class="review_info">
+
+                        <div class="review_info_imge_ratimg">
+                           
+
+                            <div class="review_info_name_rating">
+                                <div class="review_info_name">
+                                    NAME
+                                </div>
+                                <div class="review_info_rating">
+                                    <div class="simple-rating">
+                                        <!--  <div class="simple-rating_items">
+                                                <input id="imple-rating_5" type="radio" class="simple-rating_item" name="simple-rating" value="5">
+                                                <label for="imple-rating_5" class="simple-rating_label"></label>
+                                            </div>--> 
+                                    </div>
+                                        
+                                    <p>5</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    
+
+                        <div class="review_info_description">
+                            <p>описание описание описание описание описание описание описание 
+                                описание описание описание описание описание описание описание 
+                                описание </p> 
+                        </div>
+
+                    </div>
+
+                    <button id="deleteBtn"><span>×</span></button>
+
+                </div>
+
+                <div class="review_intro">
+
+                    <div class="review_info">
+
+                        <div class="review_info_imge_ratimg">
+                            
+
+                            <div class="review_info_name_rating">
+                                <div class="review_info_name">
+                                    NAME
+                                </div>
+                                <div class="review_info_rating">
+                                    <div class="simple-rating">
+                                        <!--  <div class="simple-rating_items">
+                                                <input id="imple-rating_5" type="radio" class="simple-rating_item" name="simple-rating" value="5">
+                                                <label for="imple-rating_5" class="simple-rating_label"></label>
+                                            </div>--> 
+                                    </div>
+                                        
+                                    <p>5</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    
+
+                    <div class="review_info_description">
+                        <p>описание описание описание описание описание описание описание 
+                            описание описание описание описание описание описание описание 
+                            описание </p> 
+                    </div>
+
+                    </div>
+
+                </div>
+
+                <div class="review_intro">
+
+                    <div class="review_info">
+
+                        <div class="review_info_imge_ratimg">
+                            
+
+                            <div class="review_info_name_rating">
+                                <div class="review_info_name">
+                                    NAME
+                                </div>
+                                <div class="review_info_rating">
+                                    <div class="simple-rating">
+                                        <!--  <div class="simple-rating_items">
+                                                <input id="imple-rating_5" type="radio" class="simple-rating_item" name="simple-rating" value="5">
+                                                <label for="imple-rating_5" class="simple-rating_label"></label>
+                                            </div>--> 
+                                    </div>
+                                        
+                                    <p>5</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    
+
+                    <div class="review_info_description">
+                        <p>описание описание описание описание описание описание описание 
+                            описание описание описание описание описание описание описание 
+                            описание </p> 
+                    </div>
+
+                    </div>
+
+                </div>
+
+               
+           </div>
+           
+
+        </div>
+
+
+
+
+
+
+    </main>
+    <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="/assets/js/card.js"></script>
+</html>

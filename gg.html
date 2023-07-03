@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Green gables </title>
+        <meta charset="UTF-8">
+        <link href="/assets/css/main.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap" rel="stylesheet"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+        
+    <body>
+
+
+    
+        <div id="main-container">
+            <div id="main-header">
+                <!-- бургер-->
+                <div class="main-header-container">
+                    <div class="main-header-container-body">
+                        <div id="main-header-logo">
+                            <a href="intro.html" class="menu-item">
+                                <img src="/assets/img/intro/gg_logo.svg" alt="">
+                            </a>
+                         </div>
+
+                        <div class="main-header-burger">
+                            <span></span>
+                        </div>
+            <!-- header-->   
+                        <div id="main-header-menu">
+                            <ul class="main-header-menu-list">
+                                <li> <a href="/catalog.html" class="menu-item_catalog">КАТАЛОГ</a> </li>
+                                <li> <a href="/intro.html#element1" class="menu-item">О НАС</a> </li>
+
+                                <li> <a href="/clients.html" class="menu-item_clients">КЛИЕНТАМ</a> </li>
+     <!-- изменить -->          <li> <a data-goto="/intro.html#element2" href="#" class="menu-item">КОНТАКТЫ</a> </li> 
+                                
+                               
+                                <li> <div id="main-header-bask">
+                                        <a href="/basket.html" class="menu-item">
+                                            <img src="/assets/img/intro/bask.png" alt="">
+                                        </a>
+                                        
+                                    </div> 
+                                </li>
+                                <li> 
+                                    <div id="main-header-account">
+                                        
+                                            <a href="#popup" onclick="document.getElementById('popup').style.display='block'" class="menu-item">
+                                            <img src="../assets/img/intro/account.png" alt="">
+                                        
+                                        </a>
+                                        
+                                    </div> 
+                                </li>
+                            </ul>
+                        </div>
+                              
+
+                    </div>
+
+
+                    <!-- модальное окно  -->    
+
+                    <div id="popup" class="popup">
+                        <a href="#main-header" class="popup_area"></a>
+                        <div class="popup_body">
+                            <div class="popup_content">
+                                <a href="#main-header" class="popup_close"> <span> × </span></a>
+                                <div class="tab">
+                                    <button class="tablinks" onclick="openCity(event, 'lon_on')">Вход</button>
+                                    <button class="tablinks" onclick="openCity(event, 'sign_up')">Регистация</button>
+                                </div>
+                                
+                                <div id="lon_on" class="tabcontent">
+                                    <form action="" id="myForm">
+                                        <div class="container">
+                                          <label for="email"><b>Email</b></label>
+                                             <input type="text" placeholder="Enter Email" name="email" required>
+                                      
+                                          <label for="psw"><b>Пароль</b></label>
+                                          <input type="password" placeholder="Enter Password" name="psw" required>
+                                              
+                                          <button class="submit"> Войти </button>
+                                          <label>
+                                            <input type="checkbox" checked="checked" name="remember"> Запомнить меня
+                                          </label>
+                                        </div>
+                                      
+                                        <div class="container">
+                                          
+                                          <span class="psw">Забыли <a href="#">пароль?</a></span>
+                                        </div>
+                                      </form>
+                                </div>
+                                  
+                                <div id="sign_up" class="tabcontent">
+                                    <form class="modal-content" action="" id="myForm">
+                                        <div class="container">
+                                          <hr>
+                                          <label for="email"><b>Email</b></label>
+                                          <input type="text" placeholder="Enter Email" name="email" required>
+                                    
+                                          <label for="psw"><b>Пароль</b></label>
+                                          <input type="password" placeholder="Enter Password" name="psw" required>
+                                    
+                                          <label for="psw-repeat"><b>Повторите пароль</b></label>
+                                          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                                          
+                                          <label>
+                                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
+                                          </label>
+                                    
+                                          
+                                    
+                                          <div class="clearfix">
+                                            <button type="submit" class="signupbtn">Зарегистрироваться</button>
+                                          </div>
+                                        </div>
+                                      </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+                
+                 
+            </div>
+
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="/assets/js/header.js"></script>
+
+    </body>
+
+</html>

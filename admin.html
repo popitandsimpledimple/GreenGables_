@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> GG admin</title>
+        <meta charset="UTF-8">
+        <link href="/assets/css/admin.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@100;400&display=swap" rel="stylesheet"> 
+<script src="https://kit.fontawesome.com/3d0e27e432.js"></script>
+
+</head>
+        
+<body>
+
+<main class="main">
+
+    <div class="content"> 
+        
+        <div class="title">
+            <div class="titel-text">
+                ADMIN
+            </div>
+            
+        </div>
+    </div>
+ 
+    <div class="content_clients">
+        <section class="card">
+            <div class="tab">
+                <button class="tablinks" onclick="openClient(event, 'master_classe')" id="defaultOpen">Мастер-классы</button>
+                <button class="tablinks" onclick="openClient(event, 'return')" >Возврат</button>
+                <button class="tablinks" onclick="openClient(event, 'order_tracking')">Отслеживание заказа</button>
+                <button class="tablinks" onclick="openClient(event, 'payment')">Оплата</button>
+                <button class="tablinks" onclick="openClient(event, 'delivery')">Доставка</button>
+                <button class="tablinks" onclick="openClient(event, 'catalog_product')" >Каталог</button>
+            </div>
+        </section> 
+          
+            <div id="master_classe" class="tabcontent">
+                
+
+                <div class="master_classes">
+
+                    <div class="admin-page">
+                        <h1>Добавить мастер-класс</h1>
+                        <form id="classForm">
+                        <label for="className">Название мастер-класса:</label>
+                        <input type="text" id="className" name="className" required>
+                    
+                        <label for="classDescription">Описание:</label>
+                        <textarea id="classDescription" name="classDescription" rows="4" required></textarea>
+                    
+                        <label for="classPrice">Цена:</label>
+                        <input type="number" id="classPrice" name="classPrice" required>
+                    
+                        <label for="classDate">Дата:</label>
+                        <input type="date" id="classDate" name="classDate" required>
+                    
+                        <label for="classTime">Время:</label>
+                        <input type="time" id="classTime" name="classTime" required>
+
+                        <label for="classImage">Изображение:</label>
+                        <input type="file" id="classImage" name="classImage" accept="image/*">
+                    
+                        <button type="submit">Добавить</button>
+                        </form>
+                    </div>
+
+
+                    
+                </div>
+
+            </div>
+          
+           
+            <div id="catalog_product" class="tabcontent">
+                
+                <div class="retutn_info">
+                    <h1>Добавить товар</h1>
+
+                    <form id="product-form">
+                      <label for="product-name">Название товара:</label>
+                      <input type="text" id="product-name" name="productName" required>
+                  
+                      <label for="product-description">Описание:</label>
+                      <textarea id="product-description" name="productDescription" required></textarea>
+                  
+                      <label for="product-price">Цена:</label>
+                      <input type="number" id="product-price" name="productPrice" required>
+                  
+                      <label for="female-size">Женский размер:</label>
+                      <select id="female-size" name="femaleSize">
+                        <option value="">Выберите размер</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                      </select>
+                  
+                      <label for="male-size">Мужской размер:</label>
+                      <select id="male-size" name="maleSize">
+                        <option value="">Выберите размер</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                      </select>
+                  
+                      <label for="product-color">Цвет:</label>
+                      <select id="product-color" name="productColor">
+                        <option value="">Выберите цвет</option>
+                        <option value="Черный">Черный</option>
+                        <option value="Белый">Белый</option>
+                        <option value="Серый">Серый</option>
+                        <option value="Красный">Красный</option>
+                        <option value="Синий">Синий</option>
+                      </select>
+                  
+                      <label for="product-image">Изображение:</label>
+                      <input type="file" id="product-image" name="productImage" accept=".jpg, .jpeg, .png" required>
+                  
+                      <button type="submit">Добавить товар</button>
+                    </form>
+
+                </div>
+            </div>
+          
+            <div id="return" class="tabcontent">
+                <h1>Возврат</h1>
+                
+                <div class="retutn_info">
+                    <form id="return-form">
+                        <label for="return-description">Изменение условий возврата:</label>
+                        <input type="text" id="return-description" name="return-description">
+                        <button type="submit">Сохранить</button>
+                      </form>
+                    
+                      <div id="return-list">
+                        <!-- Здесь будет отображаться список добавленных описаний возвратов -->
+                      </div>
+                  </div>
+              </div>
+              
+              <div id="order_tracking" class="tabcontent">
+                <h1>Отслеживание заказа</h1>
+                <div class="order_tracking_info">
+                    <form id="return-form">
+                        <label for="return-description">Отслеживание заказа:</label>
+                        <input type="text" id="return-description" name="return-description">
+                        <button type="submit">Сохранить</button>
+                      </form>
+                </div>
+                    
+              </div>
+              
+              <div id="payment" class="tabcontent">
+                <h1>Оплата</h1>
+                <div class="payment_info">
+                    <form id="return-form">
+                        <label for="return-description">Изменение условий оплаты:</label>
+                        <input type="text" id="return-description" name="return-description">
+                        <button type="submit">Сохранить</button>
+                    </form>
+                </div>
+              </div>
+    
+              <div id="delivery" class="tabcontent">
+
+    
+                <form id="deliveryForm">
+                    <h1>Информация о доставке</h1>
+                    <label for="deliveryPrice">Цена доставки:</label>
+                    <input type="number" id="deliveryPrice" name="deliveryPrice">
+                    
+                    <label for="deliveryInfoTo">Доставка до цены доставки:</label>
+                    <textarea id="deliveryInfoTo" name="deliveryInfoTo"></textarea>
+                    
+                    <label for="deliveryInfoFrom">Доставка от цены доставки:</label>
+                    <textarea id="deliveryInfoFrom" name="deliveryInfoFrom"></textarea>
+                    
+                    <label for="generalInfo">Общая информация:</label>
+                    <textarea id="generalInfo" name="generalInfo"></textarea>
+                    
+                    <button type="submit">Сохранить</button>
+                  </form>
+                
+                
+              
+              </div>
+ 
+ 
+
+</main>
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+<script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+<script src="/assets/js/admin.js"></script>
+</html>
